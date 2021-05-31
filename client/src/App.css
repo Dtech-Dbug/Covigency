@@ -1,5 +1,20 @@
+@font-face {
+	font-family: futura;
+	src: url("./fonts/FuturaBookBT.ttf");
+}
+@font-face {
+	font-family: SfProDisplayBold;
+	src: url("./fonts/FontsFree-Net-SFProDisplay-Bold.ttf");
+}
+@font-face {
+	font-family: SfProDisplayMedium;
+	src: url("./fonts/FontsFree-Net-SFProDisplay-Medium\ \(2\).ttf");
+}
 :root {
 	--background: Black;
+	--text-bold: "SfProDisplayBold";
+	--text-medium: "SfProDisplayMedium";
+	--sub-text: "futura";
 }
 
 body {
