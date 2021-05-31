@@ -16,7 +16,71 @@
 	--text-medium: "SfProDisplayMedium";
 	--sub-text: "futura";
 }
+html {
+	font-size: 80%;
+}
 
 body {
 	background: var(--background);
+	text-align: center;
+	margin: 0 0;
+}
+
+.LandingPage {
+	height: 100vh;
+	display: grid;
+}
+img {
+}
+header {
+	margin-top: 30vh;
+}
+figcaption {
+	width: 14rem;
+	margin: auto;
+	text-align: right;
+	transform: translateY(-6px);
+}
+figcaption span {
+	margin: 0 0.2rem;
+}
+
+.subHeading-by {
+	color: #b6b6b6;
+	font-size: 11px;
+	font-family: var(--text-medium);
+}
+.subHeading {
+	font-size: 11px;
+	color: #b6b6b6;
+	font-family: var(--sub-text);
+}
+.button-wrap {
+	border-radius: 1.875rem 1.875rem 1.875rem 1.875rem;
+	width: 227px;
+	height: 50px;
+	padding: 0.2rem;
+	position: relative;
+	background: linear-gradient(to right, #56ffc2, #4bc749);
+	margin: auto;
+}
+button {
+	background: var(--background);
+	color: white;
+	width: 227px;
+	height: 50px;
+	border-radius: 1.875rem 1.875rem 1.875rem 1.875rem;
+}
+button p {
+	font-family: var(--text-bold);
+	font-size: 18px;
+	margin: auto;
+}
+.footer-footer {
+	font-family: var(--text-bold);
+	font-size: 10px;
+	color: #d0d0d0;
+}
+.footer-footer span {
+	text-decoration: underline;
 }
