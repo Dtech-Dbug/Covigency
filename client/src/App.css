@@ -16,12 +16,19 @@
 	--text-medium: "SfProDisplayMedium";
 	--sub-text: "futura";
 }
+
+* {
+	margin: 0;
+	padding: 0;
+}
 html {
 	font-size: 80%;
 }
+.App {
+	background: var(--background);
+}
 
 body {
-	background: var(--background);
 	text-align: center;
 	margin: 0 0;
 }
@@ -66,12 +73,11 @@ figcaption span {
 }
 button {
 	background: var(--background);
-	color: white;
 	width: 227px;
 	height: 50px;
 	border-radius: 1.875rem 1.875rem 1.875rem 1.875rem;
 }
-button p {
+.button-wrap button p {
 	font-family: var(--text-bold);
 	font-size: 18px;
 	margin: auto;
@@ -87,17 +93,51 @@ button p {
 
 .StatesContainer {
 	position: relative;
+	margin: 0 0;
 	height: 100vh;
+	background: var(--background);
+}
+.headerText {
+	text-align: left;
+	padding: 3.2rem 0 0.75rem 1.3rem;
+}
+.headerText h1 {
+	color: white;
+}
+.state-search-input {
+	width: 80%;
+	height: 2.5rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 1rem 1rem;
+	background: #151515;
+	border-radius: 1rem 1rem 1rem 1rem;
+}
+.state-search-input > input {
+	border: none;
+	outline: none;
+	background: #151515;
+	flex: 1;
+	margin: 0 0.3rem;
+	color: #fcfcfc;
+	font-family: var(--text-medium);
+}
+.state-search-input > i {
+	color: #868686;
+	width: 14.5px;
+	height: 13px;
 }
 
 .StatesContainer footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0%;
 	width: 100%;
 	height: 6rem;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	background: #151515;
 }
 .StatesContainer footer ul {
 	width: 80%;
@@ -111,6 +151,9 @@ button p {
 .StatesContainer footer ul li {
 	align-items: center;
 	align-self: center;
+}
+.searchStateInput {
+	display: none;
 }
 /*
 */
