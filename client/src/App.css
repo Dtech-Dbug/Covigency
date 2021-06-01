@@ -84,3 +84,33 @@ button p {
 .footer-footer span {
 	text-decoration: underline;
 }
+
+.StatesContainer {
+	position: relative;
+	height: 100vh;
+}
+
+.StatesContainer footer {
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	height: 6rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.StatesContainer footer ul {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+
+.StatesContainer footer ul li {
+	align-items: center;
+	align-self: center;
+}
+/*
+*/
