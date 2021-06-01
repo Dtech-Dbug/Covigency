@@ -4,6 +4,8 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
+//importing the css for antd , else the adnt designs look terribly messy
+import "antd/dist/antd.css";
 
 ReactDOM.render(
 	<React.StrictMode>
