@@ -59,9 +59,9 @@ figcaption span {
 	border-radius: 1.875rem 1.875rem 1.875rem 1.875rem;
 	width: 227px;
 	height: 50px;
-	padding: 0.2rem;
+	padding: 0.04rem;
 	position: relative;
-	background: linear-gradient(to right, #56ffc2, #4bc749);
+	background: radial-gradient(#56ffc2, #4bc749);
 	margin: auto;
 }
 button {
