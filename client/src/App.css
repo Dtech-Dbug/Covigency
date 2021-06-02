@@ -33,6 +33,8 @@ body {
 	margin: 0 0;
 }
 
+/* Landing Page style */
+
 .LandingPage {
 	height: 100vh;
 	display: flex;
@@ -93,11 +95,14 @@ button {
 	text-decoration: underline;
 }
 
+/* States.js styles*/
+
 .StatesContainer {
 	position: relative;
 	margin: 0 0;
 	height: 100vh;
 	background: var(--background);
+	overflow: scroll;
 }
 .headerText {
 	text-align: left;
@@ -157,5 +162,75 @@ button {
 .searchStateInput {
 	display: none;
 }
-/*
-*/
+
+/* states Grid componenet  */
+.states-parent-grid-container {
+	margin: auto;
+	width: 92vw;
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: start;
+	align-content: center;
+	background: #151515;
+	border-top: none;
+}
+.states-parent-grid-container > .states-child-grid-container {
+	height: 6.9rem;
+	width: 11.57rem;
+	border: 0.1px solid grey;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.states-parent-grid-container > .top-child {
+	border-top: none;
+}
+.states-parent-grid-container > .states-child-grid-container .child {
+	height: 4.18rem;
+	width: 4.18rem;
+	display: grid;
+	align-content: center;
+	font-family: var(--text-bold);
+	font-size: 1.5rem;
+	border-radius: 50%;
+	color: white;
+}
+.state-name {
+	font-size: 0.8rem;
+	text-align: center;
+	font-family: var(--text-medium);
+	color: white;
+}
+
+.states-child-grid-container .child-1 {
+	background: linear-gradient(to bottom right, #a893ff, #3b0240);
+}
+.states-child-grid-container .child-2 {
+	background: linear-gradient(to bottom right, #9b8bff, #00091c);
+}
+
+.states-child-grid-container .child-3 {
+	background: linear-gradient(to bottom right, #d7ffa4, #000000);
+}
+.states-child-grid-container .child-4 {
+	background: linear-gradient(to bottom right, #d187fe, #2e033d);
+}
+.states-child-grid-container .child-5 {
+	background: linear-gradient(to bottom right, #87f3e6, #032523);
+}
+.states-child-grid-container .child-6 {
+	background: linear-gradient(to bottom right, #f3ffa6, #293002);
+}
+.states-child-grid-container .child-7 {
+	background: linear-gradient(to bottom right, #ffc187, #162c00);
+}
+.states-child-grid-container .child-8 {
+	background: linear-gradient(to bottom right, #ffa8d2, #001e1e);
+}
+.states-child-grid-container .child-9 {
+	background: linear-gradient(to bottom right, #98e791, #340956);
+}
+.states-child-grid-container .child-5 {
+	background: linear-gradient(to bottom right, #87f3e6, #032523);
+}
