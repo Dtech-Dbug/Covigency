@@ -104,15 +104,21 @@ button {
 	background: var(--background);
 	overflow: scroll;
 }
+.statesContainer-Content {
+	margin: 0 1.2rem;
+	margin-top: -1rem;
+	margin-left: 1.4rem;
+}
 .headerText {
 	text-align: left;
 	padding: 3.2rem 0 0.75rem 1.3rem;
 }
 .headerText h1 {
 	color: white;
+	font-family: var(--text-bold);
 }
 .state-search-input {
-	width: 23.1rem;
+	width: 90%;
 	height: 2.5rem;
 	display: flex;
 	justify-content: flex-start;
@@ -141,11 +147,12 @@ button {
 	position: fixed;
 	bottom: 0%;
 	width: 100%;
-	height: 6rem;
+	height: 4.4rem;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	background: #151515;
+	opacity: 95%;
 }
 .StatesContainer footer ul {
 	width: 80%;
@@ -170,10 +177,9 @@ button {
 .states-parent-grid-container {
 	margin-left: 1rem;
 	object-fit: fill;
-	width: 23.1rem;
+	width: 90%;
 	display: grid;
 	grid-template-columns: auto auto;
-	justify-content: start;
 	align-content: center;
 	background: #151515;
 
@@ -181,7 +187,6 @@ button {
 }
 .states-parent-grid-container > .states-child-grid-container {
 	height: 6.9rem;
-	width: 11.57rem;
 	border: 0.1px solid #282828;
 	display: flex;
 	flex-direction: column;
@@ -214,10 +219,10 @@ button {
 	color: white;
 }
 .state-name {
-	font-size: 0.8rem;
+	font-size: 1rem;
 	text-align: center;
 	font-family: var(--text-medium);
-	color: white;
+	color: #868686;
 }
 
 .states-child-grid-container .child-1 {
