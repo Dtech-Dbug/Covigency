@@ -1,5 +1,6 @@
 import "../App.css";
 import logo from "../images/covigency.svg";
+import { Link } from "react-router-dom";
 
 function LandingPage() {
 	return (
@@ -15,9 +16,11 @@ function LandingPage() {
 
 			<footer>
 				<div className="button-wrap">
-					<button>
-						<p style={{ color: "white" }}>Get Started</p>
-					</button>
+					<Link to="/states">
+						<button>
+							<p style={{ color: "white" }}>Get Started</p>
+						</button>
+					</Link>
 				</div>
 				<p className="footer-footer" style={{ color: "white" }}>
 					By getting started you accept our{" "}
