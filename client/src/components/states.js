@@ -1,6 +1,7 @@
 import React from "react";
 import BrowseIcon from "../images/Browse icon.svg";
 import EmergencyIcon from "../images/emergencyicon.svg";
+import StatesGrid from "./statesGrid";
 import { Input } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 
@@ -16,7 +17,9 @@ const States = () => {
 				</div>
 			</div>
 
-			<div className="states-content-container"></div>
+			<div className="states-content-container">
+				<StatesGrid />
+			</div>
 
 			<footer>
 				<ul>
