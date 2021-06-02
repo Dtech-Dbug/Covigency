@@ -18,6 +18,16 @@ const States = () => {
 			</div>
 
 			<div className="states-content-container">
+				<h2
+					style={{
+						textAlign: "left",
+						paddingLeft: "1rem",
+						marginBottom: "0.2rem",
+						color: "#868686",
+					}}
+				>
+					Select State
+				</h2>
 				<StatesGrid />
 			</div>
 
