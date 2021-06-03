@@ -2,9 +2,7 @@ import React from "react";
 import BrowseIcon from "../images/Browse icon.svg";
 import EmergencyIcon from "../images/emergencyicon.svg";
 import StatesGrid from "./statesGrid";
-import { Input } from "antd";
-import { SearchOutlined } from "@ant-design/icons";
-
+import StickyFooter from "./reusableComponents/stickyFooter";
 const States = () => {
 	return (
 		<div className="StatesContainer">
@@ -34,8 +32,16 @@ const States = () => {
 					<StatesGrid />
 				</div>
 			</div>
+			<StickyFooter />
+		</div>
+	);
+};
 
-			<footer>
+export default States;
+
+/*/
+footer moved to resubale component:
+<footer>
 				<ul>
 					<li>
 						<img src={EmergencyIcon} alt="Unavailable" />
@@ -45,8 +51,5 @@ const States = () => {
 					</li>
 				</ul>
 			</footer>
-		</div>
-	);
-};
-
-export default States;
+			
+			/*/
