@@ -15,6 +15,7 @@
 	--text-bold: "SfProDisplayBold";
 	--text-medium: "SfProDisplayMedium";
 	--sub-text: "futura";
+	--grey: #868686;
 }
 
 * {
@@ -95,20 +96,49 @@ button {
 	text-decoration: underline;
 }
 
-/* States.js styles*/
+/* Sticky Footer Component Style*/
+.sticky-footer {
+	position: fixed;
+	bottom: 0%;
+	width: 100%;
+	height: 4.4rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #151515;
+	opacity: 95%;
+}
+.sticky-footer ul {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
 
-.StatesContainer {
+.sticky-footer ul li {
+	align-items: center;
+	align-self: center;
+}
+
+/* Main Container  styles*/
+
+.Main-Container {
 	position: relative;
 	margin: 0 0;
 	height: 100vh;
 	background: var(--background);
 	overflow: scroll;
 }
-.statesContainer-Content {
+.Main-Container-Content {
 	margin: 0 1.2rem;
 	margin-top: -1rem;
 	margin-left: 1.4rem;
 }
+
+/* Header Text and search bar */
+
 .headerText {
 	text-align: left;
 	padding: 3.2rem 0 0.75rem 1.3rem;
@@ -143,33 +173,11 @@ button {
 	height: 13px;
 }
 
-.StatesContainer footer {
-	position: fixed;
-	bottom: 0%;
-	width: 100%;
-	height: 4.4rem;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background: #151515;
-	opacity: 95%;
-}
-.StatesContainer footer ul {
-	width: 80%;
-	margin: auto;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	list-style: none;
-}
-
-.StatesContainer footer ul li {
-	align-items: center;
-	align-self: center;
-}
+/* Contents in State Page*/
 
 .states-content-container {
 	margin-bottom: 8rem;
+	margin-top: 1rem;
 	padding-bottom: 1rem;
 }
 
@@ -182,7 +190,6 @@ button {
 	grid-template-columns: auto auto;
 	align-content: center;
 	background: #151515;
-
 	border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
 }
 .states-parent-grid-container > .states-child-grid-container {
@@ -335,4 +342,57 @@ button {
 }
 .states-child-grid-container .child-36 {
 	background: linear-gradient(to bottom right, #ffa8d2, #001e1e);
+}
+
+/* Ciyu List Prototye Sty;e*/
+
+.City-Container {
+	border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+	width: 90%;
+	margin-left: 1rem;
+}
+.child-flex-item {
+	padding: 1rem 1rem;
+	background-color: #151515;
+	border: 0.1px solid #282828;
+	color: var(--grey);
+	font-family: var(--text-medium);
+}
+
+.work-with-us {
+	color: var(--grey);
+}
+.work-with-us > button {
+	padding: 0;
+	color: white;
+	font-family: var(--text-bold);
+	text-align: center;
+	background: linear-gradient(to right, #2290cc, #115093);
+}
+
+.header-and-logo {
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+}
+.header-and-logo .logo {
+	width: 40%;
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+}
+.header-and-logo .logo .stateAvatar {
+	height: 3.5rem;
+	width: 3.5rem;
+	margin-top: -0.3rem;
+	background: linear-gradient(to bottom right, #a893ff, #3b0240);
+	border-radius: 50%;
+	position: absolute;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+}
+.header-and-logo .logo .stateAvatar .state-avatar-name {
+	color: white;
+	font-family: var(--text-bold);
 }

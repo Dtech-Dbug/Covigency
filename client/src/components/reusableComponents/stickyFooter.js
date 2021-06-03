@@ -4,7 +4,7 @@ import BrowseIcon from "../../images/Browse icon.svg";
 
 const StickyFooter = () => {
 	return (
-		<footer>
+		<footer className="sticky-footer">
 			<ul>
 				<li>
 					<img src={EmergencyIcon} alt="Unavailable" />
