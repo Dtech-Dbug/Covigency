@@ -36,7 +36,7 @@ const ResourcesLIst = () => {
 			{resourceItems.map(({ id, src, title }) => {
 				return (
 					<div className="list">
-						<div key={id} className="emoji-and-options">
+						<div key={id} className="emoji-and-title">
 							<img src={src} alt="..." />
 
 							<h2 style={{ color: "white" }}>{title}</h2>
