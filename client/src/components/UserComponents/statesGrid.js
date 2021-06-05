@@ -1,9 +1,18 @@
 import React from "react";
 
 const StatesGrid = () => {
+	function valueTest(e) {
+		e.preventDefault();
+		console.log(e.target.title);
+	}
 	return (
 		<div className="states-parent-grid-container">
-			<div className="states-child-grid-container top-child" id="top-child-1">
+			<div
+				className="states-child-grid-container top-child"
+				id="top-child-1"
+				title="AN"
+				onClick={valueTest}
+			>
 				<div className="child child-1">AN</div>
 				<div className="state-name">Andaman & Nicobar</div>
 			</div>
