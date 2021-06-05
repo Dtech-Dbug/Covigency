@@ -10,3 +10,11 @@
 	flex-direction: row;
 	justify-content: space-between;
 }
+
+.emoji-and-title {
+	width: 80%;
+	background-color: greenyellow;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
