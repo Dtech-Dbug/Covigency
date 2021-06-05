@@ -3,7 +3,7 @@ import LandingPage from "./components/Landing";
 import States from "./components/UserComponents/states";
 import Cities from "./components/UserComponents/Cities";
 import { path, Route } from "react-router-dom";
-import ResourcesLIst from "./components/UserComponents/ResourcesList";
+import Resources from "./components/UserComponents/Resources";
 
 function App() {
 	return (
@@ -11,7 +11,7 @@ function App() {
 			<Route path="/" exact component={LandingPage} />
 			<Route path="/states" exact component={States} />
 			<Route path="/cities" exact component={Cities} />
-			<Route path="/resources" exact component={ResourcesLIst} />
+			<Route path="/resources" exact component={Resources} />
 		</div>
 	);
 }
