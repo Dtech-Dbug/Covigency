@@ -27,27 +27,29 @@ const resourceItems = [
 	{ id: 3, src: Oxygen, title: "Oxygen" },
 	{ id: 4, src: Bed, title: "Hospital Beds" },
 	{ id: 5, src: Meds, title: "Pharmacies" },
-	{ id: 6, src: Blood, title: "Plasma / Blood Bank" },
+	{ id: 6, src: Blood, title: "Plasma / Blood " },
 ];
 
 const ResourcesLIst = () => {
 	return (
-		<div className="Main-Container">
-			{resourceItems.map(({ id, src, title }) => {
-				return (
-					<div className="list">
-						<div key={id} className="emoji-and-title">
-							<img src={src} alt="..." />
+		<div className="Container">
+			<div className="fluid-container ml-4 list-container">
+				{resourceItems.map(({ id, src, title }) => {
+					return (
+						<div className="list">
+							<div key={id} className="emoji-and-title">
+								<img src={src} alt="..." />
 
-							<h2 style={{ color: "white" }}>{title}</h2>
-						</div>
+								<h2 style={{ color: "white" }}>{title}</h2>
+							</div>
 
-						<div className="side-arrow">
-							<img src={ArrowIcon} alt=">" />
+							<div className="side-arrow">
+								<img src={ArrowIcon} alt=">" />
+							</div>
 						</div>
-					</div>
-				);
-			})}
+					);
+				})}
+			</div>
 		</div>
 	);
 };
