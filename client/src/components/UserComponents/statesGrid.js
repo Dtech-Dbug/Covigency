@@ -1,4 +1,5 @@
 import React from "react";
+import StateDataArray from "../Data/StateDataArray";
 
 const StatesGrid = () => {
 	function valueTest(e) {
@@ -7,17 +8,30 @@ const StatesGrid = () => {
 	}
 	return (
 		<div className="states-parent-grid-container">
-			<div
-				className="states-child-grid-container top-child"
-				id="top-child-1"
-				title="AN"
-				onClick={valueTest}
-			>
-				<div className="child child-1">AN</div>
-				<div className="state-name">Andaman & Nicobar</div>
-			</div>
+			{StateDataArray.map(({ id, code, title, slug, background }) => {
+				return (
+					<div
+						key={id}
+						className={`states-child-grid-container`}
+						id={`child-${id}`}
+						onClick={valueTest}
+					>
+						<div style={{ background: background }} className="child child-1">
+							{code}
+						</div>
+						<div className="state-name">
+							{title} {id}
+						</div>
+					</div>
+				);
+			})}
+		</div>
+	);
+};
 
-			<div className="states-child-grid-container top-child" id="top-child-2">
+export default StatesGrid;
+
+/*	<div className="states-child-grid-container top-child" id="top-child-2">
 				<div className="child child-2">AP</div>
 				<div className="state-name">Andhra Pradesh</div>
 			</div>
@@ -190,9 +204,4 @@ const StatesGrid = () => {
 			<div className="states-child-grid-container" id="bottom-child-2">
 				<div className="child child-36">XX</div>
 				<div className="state-name">Other</div>
-			</div>
-		</div>
-	);
-};
-
-export default StatesGrid;
+			</div>*/
