@@ -204,16 +204,16 @@ button {
 .states-parent-grid-container > .top-child {
 	border-top: none;
 }
-#top-child-1 {
+#child-1 {
 	border-radius: 0.75rem 0 0 0;
 }
-#top-child-2 {
+#child-2 {
 	border-radius: 0 0.75rem 0 0;
 }
-#bottom-child-1 {
+#child-35 {
 	border-radius: 0 0 0 0.75rem;
 }
-#bottom-child-2 {
+#child-36 {
 	border-radius: 0 0 0.75rem 0;
 }
 .states-parent-grid-container > .states-child-grid-container .child {
