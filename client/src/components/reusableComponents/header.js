@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({ stateCode }) => {
 	return (
 		<div className="headerText">
 			<div className="header-and-logo">
@@ -8,11 +8,13 @@ const Header = () => {
 					<h1>HOME</h1>
 				</div>
 
-				<div className="logo">
-					<div className="stateAvatar">
-						<div className="state-avatar-name">AP</div>
+				{stateCode && (
+					<div className="logo">
+						<div className="stateAvatar">
+							<div className="state-avatar-name">{stateCode}</div>
+						</div>
 					</div>
-				</div>
+				)}
 			</div>
 
 			<div className="state-search-input">
