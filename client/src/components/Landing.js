@@ -1,5 +1,5 @@
 import "../App.css";
-import logo from "../images/covigency.svg";
+import logo from "../icons/covigency.svg";
 import { Link } from "react-router-dom";
 
 function LandingPage() {

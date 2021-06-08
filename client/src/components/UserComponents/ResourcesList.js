@@ -4,13 +4,13 @@ import React from "react";
 import "../stylesheets/resourceList.css";
 
 //import the icons
-import ArrowIcon from "../../images/Arrow icon.svg";
-import Blood from "../../images/blood.png";
-import Meds from "../../images/💊.png";
-import Microscope from "../../images/🔬.png";
-import Oxygen from "../../images/😷.png";
-import Injection from "../../images/💉.png";
-import Bed from "../../images/bed.png";
+import ArrowIcon from "../../icons/Arrow icon.svg";
+import Blood from "../../icons/blood.png";
+import Meds from "../../icons/💊.png";
+import Microscope from "../../icons/🔬.png";
+import Oxygen from "../../icons/😷.png";
+import Injection from "../../icons/💉.png";
+import Bed from "../../icons/bed.png";
 
 //order
 // "💉": "Vaccine",

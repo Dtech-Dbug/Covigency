@@ -1,6 +1,6 @@
 import React from "react";
-import EmergencyIcon from "../../images/emergencyicon.svg";
-import BrowseIcon from "../../images/Browse icon.svg";
+import EmergencyIcon from "../../icons/emergencyicon.svg";
+import BrowseIcon from "../../icons/Browse icon.svg";
 
 const StickyFooter = () => {
 	return (
