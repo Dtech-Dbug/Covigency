@@ -1,0 +1,32 @@
+<svg width="298" height="358" viewBox="0 0 298 358" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<rect width="298" height="358" rx="12" fill="url(#paint0_radial)"/>
+<g opacity="0.5">
+<g filter="url(#filter0_f)">
+<path d="M76.1898 101.904C96.7583 115.289 121.214 138.027 123.319 166.57C125.425 195.113 105.18 229.301 77.3235 239.622C49.467 249.781 13.8365 236.235 -21.6319 220.109C-57.2624 203.983 -92.7309 185.438 -105.04 154.798C-117.348 124.32 -106.497 81.908 -81.5558 67.5557C-56.4526 53.2035 -17.4211 66.7494 10.5974 75.6188C38.6159 84.4882 55.4594 88.5197 76.1898 101.904Z" fill="#8AFFD5"/>
+</g>
+<g filter="url(#filter1_f)">
+<path d="M301.157 158.854C322.697 167.078 337.273 199.492 329.013 222.875C320.754 246.258 289.334 260.61 261.154 269.64C232.973 278.51 208.032 281.896 179.366 274.962C150.699 268.028 118.632 250.612 116.688 230.131C114.907 209.49 143.249 185.623 166.085 177.077C188.759 168.368 205.926 175.141 228.6 170.626C251.274 166.111 279.617 150.468 301.157 158.854Z" fill="#81FD9C"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f" x="-210.131" y="-38.7207" width="433.6" height="381.853" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur"/>
+</filter>
+<filter id="filter1_f" x="16.6084" y="56.4233" width="414.75" height="322.242" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur"/>
+</filter>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(50.2259) scale(465.798 415.362)">
+<stop stop-color="#98C7FE"/>
+<stop offset="1" stop-color="#6B7DDA"/>
+</radialGradient>
+<clipPath id="clip0">
+<rect width="298" height="358" fill="white"/>
+</clipPath>
+</defs>
+</svg>

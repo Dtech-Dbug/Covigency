@@ -1,0 +1,33 @@
+<svg width="298" height="338" viewBox="0 0 298 338" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<rect width="298" height="338" rx="12" fill="url(#paint0_radial)"/>
+<g opacity="0.75">
+<g filter="url(#filter0_f)">
+<path d="M129.485 168.566C101.893 195.393 67.1141 207.379 25.1501 204.525C-16.814 201.671 -39.0415 175.416 -41.5326 125.758C-44.0236 76.101 -23.9996 53.4603 18.5393 57.8363C61.0782 62.2122 97.1021 75.0546 126.611 96.3635C156.12 117.672 157.078 141.74 129.485 168.566Z" fill="#FDFFAA"/>
+</g>
+<g filter="url(#filter1_f)">
+<path d="M270.137 93.7509C249.572 113.639 223.651 122.525 192.375 120.409C161.099 118.293 144.532 98.8286 142.676 62.015C140.819 25.2013 155.743 8.41658 187.448 11.6607C219.152 14.9048 246.001 24.4256 267.995 40.223C289.988 56.0204 290.702 73.8631 270.137 93.7509Z" fill="#FFCD93"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f" x="-141.739" y="-42.6953" width="391.225" height="347.632" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur"/>
+</filter>
+<filter id="filter1_f" x="42.5215" y="-88.7334" width="342.522" height="309.448" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur"/>
+</filter>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(48.6026) scale(450.582 444.623)">
+<stop stop-color="#4EFFBF" stop-opacity="0.97"/>
+<stop offset="1" stop-color="#3EBE90"/>
+<stop offset="1" stop-color="#37A67E"/>
+</radialGradient>
+<clipPath id="clip0">
+<rect width="298" height="338" fill="white"/>
+</clipPath>
+</defs>
+</svg>
