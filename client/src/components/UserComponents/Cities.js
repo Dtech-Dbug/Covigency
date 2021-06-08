@@ -2,7 +2,7 @@ import React from "react";
 import StatesGrid from "../UserComponents/statesGrid";
 import StickyFooter from "../reusableComponents/stickyFooter";
 import CityLists from "./cityLists";
-import Header from "../reusableComponents/header";
+import HomeHeaderWithCSS from "../reusableComponents/HomeHeaderWithCSS";
 
 const Cities = () => {
 	return (
@@ -26,7 +26,7 @@ const Cities = () => {
 						<input type="text" placeholder="Search Your CIty here"></input>
 					</div>
 				</div> */}
-				<Header />
+				<HomeHeaderWithCSS />
 
 				<div className="states-content-container">
 					<h2

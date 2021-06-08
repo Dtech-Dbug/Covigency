@@ -1,5 +1,6 @@
 import React from "react";
-import Header from "../reusableComponents/header";
+import HomeHeaderBootstrap from "../reusableComponents/HomeHeaderBootstrap";
+
 import ResourcesLIst from "./ResourcesList";
 
 const Resources = () => {
@@ -7,7 +8,7 @@ const Resources = () => {
 		<div className="fluid-container">
 			<div className="row">
 				<div className="col-md-12 ml-1 pr-3">
-					<Header />
+					<HomeHeaderBootstrap />
 				</div>
 			</div>
 
