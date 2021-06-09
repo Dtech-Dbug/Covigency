@@ -14,12 +14,17 @@
 	font-family: Proxima;
 	src: url("./fonts/ProximaNovaA-Black.ttf");
 }
+@font-face {
+	font-family: SemiBold;
+	src: url("./fonts/FontsFree-Net-SFProDisplay-Semibold.ttf");
+}
 :root {
 	--background: Black;
 	--text-bold: "SfProDisplayBold";
 	--text-medium: "SfProDisplayMedium";
 	--sub-text: "futura";
 	--text-proxima: "Proxima";
+	--text-semi-bold: "SemiBold";
 	--grey: #868686;
 }
 
