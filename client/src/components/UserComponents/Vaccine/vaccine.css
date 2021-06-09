@@ -23,7 +23,7 @@ h1 {
 
 .promoted-org h1 {
 	font-family: var(--text-proxima);
-	font-size: 3rem;
+	font-size: 2rem;
 	color: #161616;
 }
 .promoted-org h4 {
@@ -90,4 +90,9 @@ h1 {
 /* Vaccine Main PAage compoenet*/
 .vaccine-content-container {
 	padding: 1.5rem 1.5rem;
+}
+.vaccine-content-container h2 {
+	color: white;
+	font-family: var(--text-bold);
+	text-align: left;
 }
