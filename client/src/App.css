@@ -10,11 +10,16 @@
 	font-family: SfProDisplayMedium;
 	src: url("./fonts/FontsFree-Net-SFProDisplay-Medium\ \(2\).ttf");
 }
+@font-face {
+	font-family: Proxima;
+	src: url("./fonts/ProximaNovaA-Black.ttf");
+}
 :root {
 	--background: Black;
 	--text-bold: "SfProDisplayBold";
 	--text-medium: "SfProDisplayMedium";
 	--sub-text: "futura";
+	--text-proxima: "Proxima";
 	--grey: #868686;
 }
 
@@ -149,7 +154,7 @@ button {
 	font-family: var(--text-bold);
 }
 .state-search-input {
-	width: 90%;
+	width: 92%;
 	height: 2.5rem;
 	display: flex;
 	justify-content: flex-start;
