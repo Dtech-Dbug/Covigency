@@ -4,17 +4,57 @@
 	box-sizing: border-box;
 }
 .promotion-card {
-	background: linear-gradient(to right, cyan, rgb(126, 221, 221));
-	text-align: left;
+	position: relative;
+	width: 100%;
+	background: linear-gradient(to right, #d4e6df, #c5d3ce);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	padding: 1.5rem 1.5rem;
+	border-radius: 1.33rem 1.33rem 1.33rem 1.33rem;
 }
+
 .promoted-org h4,
 h1 {
 	line-height: 1rem;
+	text-align: left;
 }
+
 .promoted-org h1 {
-	font-family: var(--text-bold);
+	font-family: var(--text-proxima);
+	font-size: 3rem;
+	color: #161616;
 }
 .promoted-org h4 {
 	font-family: var(--text-bold);
+	font-size: 1rem;
+	color: #161616;
+	margin-bottom: 0.8rem;
+}
+.promotion-intro {
+	text-align: left;
+}
+.promotion-intro p {
+	font-family: var(--text-semi-bold);
+	font-size: 1rem;
+}
+.promotion-footer-middle {
+	background-color: black;
+	width: 30%;
+	margin: auto;
+	color: #cbdad4;
+	font-family: var(--text-bold);
+	font-size: 13px;
+	position: absolute;
+	bottom: 0;
+	left: 35%;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+.promotion-card img {
+	position: absolute;
+	right: 2%;
+	bottom: 8%;
+	height: 3rem;
+	width: 2.5rem;
 }
