@@ -8,22 +8,27 @@
 	box-sizing: border-box;
 	position: relative;
 }
-#categoryComponent {
-	display: none;
+.category-block {
+	background-color: black;
+	padding: 1rem 1rem;
+	height: 100vh;
 }
+
 /* category cards padding*/
 .cat-text {
 	padding: 1rem 1rem;
 }
 
 .category-block p {
-	font-size: 1.2rem;
+	font-size: 0.8rem;
+	border: none;
 }
 .category-block h4 {
 	font-size: 1.5rem;
 }
 .category-block h2 {
 	text-align: left;
+	color: white;
 }
 .category-container {
 	display: grid;
@@ -58,8 +63,8 @@ p {
 
 .arrow {
 	position: absolute;
-	bottom: 0.8rem;
-	right: 0.8rem;
+	bottom: 0.4rem;
+	right: 0.2rem;
 	height: 2.5rem;
 	width: 3rem;
 	padding: 0.3rem 0.3rem;
@@ -130,4 +135,14 @@ p {
 
 .cat-2 .Icons {
 	padding-top: 0.3rem;
+	height: 3.5rem;
+	width: 3.5rem;
 }
+
+.cat-4 .Icons {
+	height: 3.5rem;
+	width: 3.5rem;
+	padding-top: 0.3rem;
+}
+
+/*category main page */
