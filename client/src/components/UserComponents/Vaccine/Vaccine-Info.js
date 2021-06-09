@@ -1,9 +1,10 @@
 import React from "react";
+import "../Vaccine/vaccine.css";
 import CowinButton from "../../../icons/CowinButton.png";
 
 const VaccineInfo = () => {
 	return (
-		<div id="Parent-Container">
+		<div id="Parent-Container-vaccine-Info">
 			<h2>Vaccine</h2>
 
 			<div className="vaccine-info-container">
