@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.promotion-card {
+	background: linear-gradient(to right, cyan, rgb(126, 221, 221));
+	text-align: left;
+	padding: 1.5rem 1.5rem;
+}
+.promoted-org h4,
+h1 {
+	line-height: 1rem;
+}
+.promoted-org h1 {
+	font-family: var(--text-bold);
+}
+.promoted-org h4 {
+	font-family: var(--text-bold);
+}
