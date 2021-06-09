@@ -34,13 +34,15 @@ const VaccineInfo = () => {
 					access the CoWIN user manual for more detials below.
 				</p>
 
-				<a
-					href="https://www.cowin.gov.in/home"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<img src={CowinButton} alt="" />
-				</a>
+				<div className="register-btn">
+					<a
+						href="https://www.cowin.gov.in/home"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<img src={CowinButton} alt="" />
+					</a>
+				</div>
 			</div>
 		</div>
 	);

@@ -83,6 +83,9 @@ h1 {
 .vaccine-info-container a {
 	cursor: pointer;
 }
+.register-btn {
+	text-align: center;
+}
 .vaccine-info-container img {
 	height: 3rem;
 }
