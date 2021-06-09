@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+/* Promotion -Card component */
 .promotion-card {
 	position: relative;
 	width: 100%;
@@ -59,9 +60,10 @@ h1 {
 	width: 2.5rem;
 }
 /* Vaccine info card in vaccine page*/
-#Parent-Container {
+#Parent-Container-vaccine-Info {
+	margin-top: 1rem;
 }
-#Parent-Container h2 {
+#Parent-Container-vaccine-Info h2 {
 	color: white;
 	text-align: left;
 	font-family: var(--text-bold);
@@ -83,4 +85,9 @@ h1 {
 }
 .vaccine-info-container img {
 	height: 3rem;
+}
+
+/* Vaccine Main PAage compoenet*/
+.vaccine-content-container {
+	padding: 1.5rem 1.5rem;
 }
