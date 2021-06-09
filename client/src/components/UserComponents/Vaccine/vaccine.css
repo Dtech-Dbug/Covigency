@@ -91,6 +91,10 @@ h1 {
 }
 
 /* Vaccine Main PAage compoenet*/
+#Vaccine-Container {
+	padding-bottom: 20%;
+	scroll-behavior: smooth;
+}
 .vaccine-content-container {
 	padding: 1.5rem 1.5rem;
 }
