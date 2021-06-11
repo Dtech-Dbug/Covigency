@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import StatesGrid from "../UserComponents/statesGrid";
 import StickyFooter from "../reusableComponents/stickyFooter";
 import CityLists from "./cityLists";
 import HomeHeaderWithCSS from "../reusableComponents/HomeHeaderWithCSS";
+import HomeHeaderBootstrap from "../reusableComponents/HomeHeaderBootstrap";
 
-const Cities = () => {
+const Cities = ({ match }) => {
+	useEffect(() => {
+		console.log("Match Slug ", match.params.slug);
+	}, []);
 	return (
 		<div className="Main-Container">
 			<div className="Main-Container-Content">
@@ -26,7 +30,9 @@ const Cities = () => {
 						<input type="text" placeholder="Search Your CIty here"></input>
 					</div>
 				</div> */}
-				<HomeHeaderWithCSS />
+				<HomeHeaderBootstrap stateCode={match.params.slug} />
+
+				<h3 style={{ color: "white" }}>Barely a PROTOTYPE</h3>
 
 				<div className="states-content-container">
 					<h2
