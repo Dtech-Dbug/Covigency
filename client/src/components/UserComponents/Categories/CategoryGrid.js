@@ -19,9 +19,15 @@ import { useHistory } from "react-router-dom";
 
 const CategoryGrid = () => {
 	const history = useHistory();
-	function changeRoute(e) {
+
+	function changeRouteToStates(e) {
 		e.preventDefault();
 		history.push("/states");
+	}
+
+	function vaccineRoute(e) {
+		e.preventDefault();
+		history.push("/vaccine");
 	}
 	return (
 		<body>
@@ -29,7 +35,7 @@ const CategoryGrid = () => {
 				<h2>Categories</h2>
 
 				<div class="category-container">
-					<div class="cat-1" onClick={changeRoute}>
+					<div class="cat-1" onClick={changeRouteToStates}>
 						<div class="cat-bg">
 							<img src={SelectState} alt="" />
 						</div>
@@ -44,10 +50,15 @@ const CategoryGrid = () => {
 							<img src={Compass} className="Icons" alt="" />
 						</div>
 
-						<img src={Arrow} alt="" class="arrow" />
+						<img
+							onClick={changeRouteToStates}
+							src={Arrow}
+							alt=""
+							class="arrow"
+						/>
 					</div>
 
-					<div class="cat-2">
+					<div class="cat-2" onClick={vaccineRoute}>
 						<div class="cat-bg">
 							<img src={VaccineCard} alt="" />
 						</div>
@@ -61,7 +72,7 @@ const CategoryGrid = () => {
 								</p>
 							</div>
 
-							<img src={Arrow} alt="" class="arrow" />
+							<img onClick={vaccineRoute} src={Arrow} alt="" class="arrow" />
 						</div>
 					</div>
 
