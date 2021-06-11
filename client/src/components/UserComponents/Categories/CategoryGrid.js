@@ -14,15 +14,22 @@ import Arrow from "../../../icons/WhiteArrow.svg";
 import Syringe from "../../../icons/💉.png";
 import SupportIcon from "../../../icons/support icon.png";
 import PostCovidIcon from "../../../icons/Postcovid.png";
+import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const CategoryGrid = () => {
+	const history = useHistory();
+	function changeRoute(e) {
+		e.preventDefault();
+		history.push("/states");
+	}
 	return (
 		<body>
 			<div class="category-block">
 				<h2>Categories</h2>
 
 				<div class="category-container">
-					<div class="cat-1">
+					<div class="cat-1" onClick={changeRoute}>
 						<div class="cat-bg">
 							<img src={SelectState} alt="" />
 						</div>
@@ -30,12 +37,13 @@ const CategoryGrid = () => {
 							<div class="cat-info">
 								<h4>Select state.</h4>
 								<p>
-									On this category you can search the helpful content on your
-									surrounding
+									On this category you can search for your state and resources
+									based on your location.
 								</p>
 							</div>
 							<img src={Compass} className="Icons" alt="" />
 						</div>
+
 						<img src={Arrow} alt="" class="arrow" />
 					</div>
 
@@ -85,7 +93,7 @@ const CategoryGrid = () => {
 							<div class="cat-info">
 								<h4>Post Covid.</h4>
 								<p>
-									Get access to our helpful resources which guide you to get
+									Get access to our helpful resources which guides you to get
 									back your health after effected by COVID-19.
 								</p>
 							</div>
