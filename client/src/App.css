@@ -395,7 +395,7 @@ button {
 .header-and-logo .logo .stateAvatar {
 	height: 3.5rem;
 	width: 3.5rem;
-	margin-top: -0.3rem;
+	margin-top: -1.5rem;
 	background: linear-gradient(to bottom right, #a893ff, #3b0240);
 	border-radius: 50%;
 	position: absolute;
