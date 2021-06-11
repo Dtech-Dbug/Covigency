@@ -16,7 +16,7 @@ function LandingPage() {
 
 			<footer>
 				<div className="button-wrap">
-					<Link to="/states">
+					<Link to="/categories">
 						<button>
 							<p style={{ color: "white" }}>Get Started</p>
 						</button>
