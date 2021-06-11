@@ -12,7 +12,7 @@ function App() {
 		<div className="App">
 			<Route path="/" exact component={LandingPage} />
 			<Route path="/states" exact component={States} />
-			<Route path="/cities" exact component={Cities} />
+			<Route path="/cities/:slug" exact component={Cities} />
 			<Route path="/resources" exact component={Resources} />
 			<Route path="/vaccine" exact component={VaccinePage} />
 			<Route path="/categories" exact component={SelectCategories} />
