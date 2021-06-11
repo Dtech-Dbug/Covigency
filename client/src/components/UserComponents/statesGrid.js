@@ -1,10 +1,14 @@
 import React from "react";
 import StateDataArray from "../Data/StateDataArray";
+import { useHistory } from "react-router-dom";
 
 const StatesGrid = () => {
-	function valueTest(e) {
-		e.preventDefault();
-		console.log(e.target.title);
+	const history = useHistory();
+	function valueTest(slug) {}
+
+	function check(slug) {
+		console.log(slug);
+		history.push(`/cities/${slug}`);
 	}
 	return (
 		<div className="states-parent-grid-container">
@@ -16,12 +20,14 @@ const StatesGrid = () => {
 						id={`child-${id}`}
 						onClick={valueTest}
 					>
-						<div style={{ background: background }} className="child child-1">
+						<div
+							style={{ background: background }}
+							className="child child-1"
+							onClick={() => check(slug)}
+						>
 							{code}
 						</div>
-						<div className="state-name">
-							{title} {id}
-						</div>
+						<div className="state-name">{title}</div>
 					</div>
 				);
 			})}
