@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import StatesGrid from "../UserComponents/statesGrid";
 import StickyFooter from "../reusableComponents/stickyFooter";
+import StateDataArray from "../Data/StateDataArray";
+
 const States = () => {
+	const [keywords, setKeywords] = useState("");
+	const [gridState, setGridState] = useState([]);
+
+	useEffect(() => {
+		setGridState(StateDataArray);
+		console.log("state: ", gridState);
+	}, [gridState]);
+	function handleChange(e) {
+		e.preventDefault();
+
+		setKeywords(e.target.value);
+		console.log("Keyords : ", keywords);
+	}
+
 	return (
 		<div className="Main-Container">
 			<div className="Main-Container-Content">
@@ -10,7 +26,11 @@ const States = () => {
 
 					<div className="state-search-input">
 						<i class="fa fa-search"></i>
-						<input type="text" placeholder="Search Your State here"></input>
+						<input
+							type="text"
+							placeholder="Search Your State here"
+							onChange={handleChange}
+						></input>
 					</div>
 				</div>
 
@@ -27,7 +47,7 @@ const States = () => {
 					>
 						Select State
 					</h2>
-					<StatesGrid />
+					<StatesGrid gridState={gridState} keywords={keywords} />
 				</div>
 			</div>
 			<StickyFooter />
