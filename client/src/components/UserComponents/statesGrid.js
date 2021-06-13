@@ -2,35 +2,37 @@ import React from "react";
 import StateDataArray from "../Data/StateDataArray";
 import { useHistory } from "react-router-dom";
 
-const StatesGrid = () => {
+const StatesGrid = ({ gridState, keywords }) => {
 	const history = useHistory();
-	function valueTest(slug) {}
 
 	function check(slug) {
 		console.log(slug);
 		history.push(`/cities/${slug}`);
 	}
+	const search = (keywords) => (gridState) =>
+		gridState.title.toLowerCase().includes(keywords);
 	return (
 		<div className="states-parent-grid-container">
-			{StateDataArray.map(({ id, code, title, slug, background }) => {
-				return (
-					<div
-						key={id}
-						className={`states-child-grid-container`}
-						id={`child-${id}`}
-						onClick={valueTest}
-					>
+			{gridState
+				.filter(search(keywords))
+				.map(({ id, code, title, slug, background }) => {
+					return (
 						<div
-							style={{ background: background }}
-							className="child child-1"
-							onClick={() => check(slug)}
+							key={id}
+							className={`states-child-grid-container`}
+							id={`child-${id}`}
 						>
-							{code}
+							<div
+								style={{ background: background }}
+								className="child child-1"
+								onClick={() => check(slug)}
+							>
+								{code}
+							</div>
+							<div className="state-name">{title}</div>
 						</div>
-						<div className="state-name">{title}</div>
-					</div>
-				);
-			})}
+					);
+				})}
 		</div>
 	);
 };
