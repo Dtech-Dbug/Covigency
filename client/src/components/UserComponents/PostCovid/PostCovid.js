@@ -3,8 +3,16 @@ import PostCovidIcon from "../../../icons/Postcovid.png";
 import Food from "../../../icons/food.png";
 import HomeHeaderBootstrap from "../../reusableComponents/HomeHeaderBootstrap";
 import StickyFooter from "../../reusableComponents/stickyFooter";
+import { Link } from "react-router-dom";
 import "./PostCovid.css";
-const PostCovid = () => {
+const PostCovid = ({ history }) => {
+	function YogaRoute(e) {
+		e.preventDefault();
+		history.push("/yoga");
+	}
+	function FoodRoute(e) {
+		e.preventDefault();
+	}
 	return (
 		<div id="Post-Covid-Container">
 			<HomeHeaderBootstrap />
@@ -12,7 +20,7 @@ const PostCovid = () => {
 			<div className="Post-Covid-Content-Container">
 				<h3>Post Covid</h3>
 				<div className="Post-Covid-Flex-Container">
-					<div className="yoga">
+					<div className="yoga" onClick={YogaRoute}>
 						<img src={PostCovidIcon} alt="oops" />
 
 						<div className="information">
@@ -20,7 +28,7 @@ const PostCovid = () => {
 						</div>
 					</div>
 
-					<div className="food">
+					<div className="food" onClick={FoodRoute}>
 						<div className="image">
 							<img src={Food} alt="oops" />
 						</div>
