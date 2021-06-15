@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+}
+
+#Post-Covid-Container {
+	height: 100vh;
+}
+.Post-Covid-Content-Container {
+	padding: 1rem 1rem;
+}
+.Post-Covid-Flex-Container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 95%;
+}
+.Post-Covid-Flex-Container > div {
+	background-color: #151515;
+	width: 48%;
+	padding: 1rem 0;
+	border-radius: 0.75rem 0.75rem;
+}
+.Post-Covid-Flex-Container img {
+	height: 6rem;
+}
