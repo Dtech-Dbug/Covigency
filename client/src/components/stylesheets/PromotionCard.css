@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 /* Promotion -Card component */
+a {
+	text-decoration: none;
+	color: black;
+}
 .promotion-card {
 	position: relative;
 	width: 100%;
@@ -41,6 +45,7 @@ h1 {
 .promotion-intro p {
 	font-family: var(--text-semi-bold);
 	font-size: 1rem;
+	color: black;
 }
 .promotion-footer-middle {
 	background-color: black;
