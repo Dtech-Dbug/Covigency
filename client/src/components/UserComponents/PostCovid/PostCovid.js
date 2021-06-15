@@ -12,6 +12,7 @@ const PostCovid = ({ history }) => {
 	}
 	function FoodRoute(e) {
 		e.preventDefault();
+		history.push("/diet");
 	}
 	return (
 		<div id="Post-Covid-Container">
