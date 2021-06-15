@@ -28,7 +28,7 @@ const Yoga = () => {
 				<CallToActionCard
 					category="Yoga"
 					image={YogaIcon}
-					buttonText="Download Yoga CLass"
+					buttonText="Download Yoga PDF"
 					beta="Beta"
 					information={information}
 					link={PDF}
