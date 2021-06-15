@@ -7,6 +7,8 @@ import Resources from "./components/UserComponents/Resources";
 import { VaccinePage } from "./components/UserComponents/Vaccine/VaccinePage";
 import SelectCategories from "./components/UserComponents/Categories/SelectCategories";
 import PostCovid from "./components/UserComponents/PostCovid/PostCovid";
+import Yoga from "./components/UserComponents/PostCovid/Yoga";
+import CallToActionCard from "./components/reusableComponents/CallToActionCard";
 
 function App() {
 	return (
@@ -18,6 +20,8 @@ function App() {
 			<Route path="/categories" exact component={SelectCategories} />
 			<Route path="/vaccine" exact component={VaccinePage} />
 			<Route path="/post-covid" exact component={PostCovid} />
+			<Route path="/yoga" exact component={Yoga} />
+			<Route path="/test" exact component={CallToActionCard} />
 		</div>
 	);
 }

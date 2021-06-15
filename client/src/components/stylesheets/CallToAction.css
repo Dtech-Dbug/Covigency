@@ -1,0 +1,39 @@
+:root {
+	--text-medium: "SfProDisplayMedium";
+}
+#Call-To-Action-Container {
+	background-color: crimson;
+}
+#Call-To-Action-Container h2 {
+	color: white;
+	text-align: left;
+}
+
+.Call-To-Action-Info-Container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #151515;
+	padding: 2rem 1rem;
+}
+
+.Call-To-Action-Info-Container img {
+	height: 6rem;
+}
+.Call-To-Action-Info-Container p {
+	color: white;
+	font-family: var(--text-medium);
+}
+#cta-btn {
+	background-color: #4ca0dc;
+	color: white;
+	font-family: var(--text-medium);
+	font-size: 1.2rem;
+	position: relative;
+}
+#cta-btn #beta {
+	color: #e33a3a;
+	font-size: 0.8rem;
+	position: absolute;
+}
