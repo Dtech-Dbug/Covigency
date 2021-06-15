@@ -29,6 +29,11 @@ const CategoryGrid = () => {
 		e.preventDefault();
 		history.push("/vaccine");
 	}
+
+	function postCovidRoute(e) {
+		e.preventDefault();
+		history.push("/post-covid");
+	}
 	return (
 		<body>
 			<div class="category-block">
@@ -94,7 +99,7 @@ const CategoryGrid = () => {
 						</div>
 					</div>
 
-					<div class="cat-3">
+					<div class="cat-3" onClick={postCovidRoute}>
 						<div class="cat-bg">
 							<img src={PostCovid} alt="" />
 							<img src={Arrow} alt="" class="arrow" />
