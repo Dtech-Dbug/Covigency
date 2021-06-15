@@ -9,6 +9,7 @@ import SelectCategories from "./components/UserComponents/Categories/SelectCateg
 import PostCovid from "./components/UserComponents/PostCovid/PostCovid";
 import Yoga from "./components/UserComponents/PostCovid/Yoga";
 import CallToActionCard from "./components/reusableComponents/CallToActionCard";
+import Diet from "./components/UserComponents/PostCovid/Diet";
 
 function App() {
 	return (
@@ -21,7 +22,7 @@ function App() {
 			<Route path="/vaccine" exact component={VaccinePage} />
 			<Route path="/post-covid" exact component={PostCovid} />
 			<Route path="/yoga" exact component={Yoga} />
-			<Route path="/test" exact component={CallToActionCard} />
+			<Route path="/diet" exact component={Diet} />
 		</div>
 	);
 }
