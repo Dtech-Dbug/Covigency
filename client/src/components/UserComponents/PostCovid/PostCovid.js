@@ -1,5 +1,6 @@
 import React from "react";
 import PostCovidIcon from "../../../icons/Postcovid.png";
+import Food from "../../../icons/food.png";
 import HomeHeaderBootstrap from "../../reusableComponents/HomeHeaderBootstrap";
 import StickyFooter from "../../reusableComponents/stickyFooter";
 import "./PostCovid.css";
@@ -9,21 +10,22 @@ const PostCovid = () => {
 			<HomeHeaderBootstrap />
 
 			<div className="Post-Covid-Content-Container">
+				<h3>Post Covid</h3>
 				<div className="Post-Covid-Flex-Container">
 					<div className="yoga">
 						<img src={PostCovidIcon} alt="oops" />
 
 						<div className="information">
-							<p>Hello Let us start yoga</p>
+							<p>Yoga</p>
 						</div>
 					</div>
 
 					<div className="food">
 						<div className="image">
-							<img src={PostCovidIcon} alt="oops" />
+							<img src={Food} alt="oops" />
 						</div>
 						<div className="information">
-							<p>Hello Let us start yoga</p>
+							<p>Food</p>
 						</div>
 					</div>
 				</div>

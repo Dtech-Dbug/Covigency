@@ -8,19 +8,28 @@
 .Post-Covid-Content-Container {
 	padding: 1rem 1rem;
 }
+.Post-Covid-Content-Container h3 {
+	text-align: left;
+	color: white;
+}
 .Post-Covid-Flex-Container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
 	width: 95%;
 }
+
 .Post-Covid-Flex-Container > div {
 	background-color: #151515;
-	width: 48%;
+	width: 49.5%;
 	padding: 1rem 0;
+	padding-top: 2rem;
 	border-radius: 0.75rem 0.75rem;
 }
 .Post-Covid-Flex-Container img {
 	height: 6rem;
+}
+.Post-Covid-Flex-Container p {
+	color: white;
+	font-size: 1.5rem;
 }
