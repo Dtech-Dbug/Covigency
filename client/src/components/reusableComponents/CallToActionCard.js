@@ -8,6 +8,7 @@ const CallToActionCard = ({
 	buttonText,
 	image,
 	beta,
+	link,
 }) => {
 	return (
 		<div id="Call-To-Action-Container">
@@ -18,10 +19,12 @@ const CallToActionCard = ({
 
 				<p>{information}</p>
 
-				<button id="cta-btn">
-					{buttonText}
-					<span id="beta">{beta}</span>
-				</button>
+				<a href={link} download="Yoga">
+					<button id="cta-btn">
+						{buttonText}
+						<span id="beta">{beta}</span>
+					</button>
+				</a>
 			</div>
 		</div>
 	);

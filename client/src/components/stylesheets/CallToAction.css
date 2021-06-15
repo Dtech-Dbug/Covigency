@@ -1,29 +1,31 @@
 :root {
 	--text-medium: "SfProDisplayMedium";
+	--text-bold: "SfProDisplayBold";
 }
 #Call-To-Action-Container {
-	background-color: crimson;
+	margin-top: 1rem;
 }
 #Call-To-Action-Container h2 {
 	color: white;
 	text-align: left;
+	font-size: 2rem;
+	font-family: var(--text-bold);
 }
 
 .Call-To-Action-Info-Container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
 	background-color: #151515;
-	padding: 2rem 1rem;
+	padding: 4rem 1rem;
 }
 
 .Call-To-Action-Info-Container img {
 	height: 6rem;
+	margin-bottom: 1rem;
+	margin-top: -2rem;
 }
 .Call-To-Action-Info-Container p {
 	color: white;
 	font-family: var(--text-medium);
+	margin-bottom: 2rem;
 }
 #cta-btn {
 	background-color: #4ca0dc;
