@@ -26,6 +26,9 @@ h1 {
 	font-size: 2rem;
 	color: #161616;
 }
+.promoted-org span {
+	font-size: 1rem;
+}
 .promoted-org h4 {
 	font-family: var(--text-bold);
 	font-size: 1rem;
