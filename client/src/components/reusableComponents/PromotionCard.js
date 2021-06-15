@@ -1,12 +1,14 @@
 import React from "react";
 import "../stylesheets/PromotionCard.css";
 
-const PromotionCard = ({ header, img, paragraph }) => {
+const PromotionCard = ({ header, img, paragraph, extension }) => {
 	return (
 		<div className="promotion-card">
 			<div className="promoted-org">
 				<h4>Join</h4>
-				<h1>{header}</h1>
+				<h1>
+					{header} <span>{extension}</span>{" "}
+				</h1>
 			</div>
 
 			<div className="promotion-intro">
