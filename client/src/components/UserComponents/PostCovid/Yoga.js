@@ -22,6 +22,7 @@ const Yoga = () => {
 					extension=".org"
 					img={RoundArrow}
 					paragraph={paragraph}
+					LinkToOrg="https://leher.org/"
 				/>
 
 				<CallToActionCard
