@@ -35,9 +35,9 @@ const States = () => {
 				</div>
 
 				<div className="states-content-container">
-					<h2 className="states-content-container-heading">
+					<h3 className="states-content-container-heading">
 						Select State
-					</h2>
+					</h3>
 					<StatesGrid gridState={gridState} keywords={keywords} />
 				</div>
 			</div>

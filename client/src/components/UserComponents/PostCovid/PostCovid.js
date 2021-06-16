@@ -15,7 +15,7 @@ const PostCovid = ({ history }) => {
 		history.push("/diet");
 	}
 	return (
-		<div id="Post-Covid-Container">
+		<div id="Post-Covid-Container" className="Main-Container">
 			<HomeHeaderBootstrap />
 
 			<div className="Post-Covid-Content-Container">

@@ -5,11 +5,8 @@
 	--text-bold: "SfProDisplayBold";
 }
 
-#Post-Covid-Container {
-	height: 100vh;
-}
 .Post-Covid-Content-Container {
-	padding: 1rem 1rem;
+	padding: 1rem;
 }
 .Post-Covid-Content-Container h3 {
 	text-align: left;
@@ -37,12 +34,3 @@
 	font-size: 1.5rem;
 }
 
-/* Yoga */
-#Yoga-Container {
-	height: 100vh;
-}
-
-/*die*/
-#Diet-Container {
-	height: 100vh;
-}
