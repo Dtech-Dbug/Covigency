@@ -191,6 +191,14 @@ button {
 	margin-top: 1rem;
 	padding-bottom: 1rem;
 }
+.states-content-container-heading{
+	text-align: left;
+	padding-left: 1rem;
+	margin-bottom: 1rem;
+	color:white;
+	font-size: 1.2rem;
+	font-family: var(--text-medium);
+}
 
 /* states Grid componenet  */
 .states-parent-grid-container {
@@ -294,4 +302,14 @@ button {
 .header-and-logo .logo .stateAvatar .state-avatar-name {
 	color: white;
 	font-family: var(--text-bold);
+}
+
+#content-container{
+	padding: 1.5rem;
+}
+
+#content-container-heading{
+	color: white;
+	font-family: var(--text-bold);
+	text-align: left;
 }

@@ -41,23 +41,8 @@
 #Yoga-Container {
 	height: 100vh;
 }
-.yoga-content-container h2 {
-	color: white;
-	text-align: left;
-	font-family: var(--text-bold);
-}
-.yoga-content-container {
-	padding: 1.5rem 1.5rem;
-}
+
 /*die*/
 #Diet-Container {
 	height: 100vh;
-}
-.diet-content-container {
-	padding: 1.5rem 1.5rem;
-}
-.diet-content-container h2 {
-	color: white;
-	text-align: left;
-	font-family: var(--text-bold);
 }

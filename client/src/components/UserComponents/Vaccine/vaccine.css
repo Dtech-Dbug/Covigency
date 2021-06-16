@@ -34,11 +34,3 @@
 	padding-bottom: 20%;
 	scroll-behavior: smooth;
 }
-.vaccine-content-container {
-	padding: 1.5rem 1.5rem;
-}
-.vaccine-content-container h2 {
-	color: white;
-	font-family: var(--text-bold);
-	text-align: left;
-}

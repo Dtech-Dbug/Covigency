@@ -3,7 +3,7 @@ import RoundArrow from "../../../icons/Arrow.svg";
 import PromotionCard from "../../reusableComponents/PromotionCard";
 import CallToActionCard from "../../reusableComponents/CallToActionCard";
 import StickyFooter from "../../reusableComponents/stickyFooter";
-//import image
+//Assets 
 import YogaIcon from "../../../icons/Postcovid.png";
 import PDF from "../../../PDFs/yoga-guidelines.pdf";
 
@@ -15,8 +15,8 @@ const Yoga = () => {
 		"Yoga  is a discipline on an extremely subtle science , which focuses on bringing harmony between mind and body.";
 	return (
 		<div id="Yoga-Container">
-			<div className="yoga-content-container">
-				<h2> {"<"} Home </h2>
+			<div id="content-container">
+				<h2 id="content-container-heading"> {"<"} Home </h2>
 				<PromotionCard
 					header="Leher"
 					extension=".org"

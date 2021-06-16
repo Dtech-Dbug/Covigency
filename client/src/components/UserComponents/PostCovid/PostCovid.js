@@ -3,7 +3,7 @@ import PostCovidIcon from "../../../icons/Postcovid.png";
 import Food from "../../../icons/food.png";
 import HomeHeaderBootstrap from "../../reusableComponents/HomeHeaderBootstrap";
 import StickyFooter from "../../reusableComponents/stickyFooter";
-import { Link } from "react-router-dom";
+
 import "./PostCovid.css";
 const PostCovid = ({ history }) => {
 	function YogaRoute(e) {
