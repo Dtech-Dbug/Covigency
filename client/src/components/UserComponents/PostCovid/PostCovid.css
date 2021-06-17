@@ -5,11 +5,8 @@
 	--text-bold: "SfProDisplayBold";
 }
 
-#Post-Covid-Container {
-	height: 100vh;
-}
 .Post-Covid-Content-Container {
-	padding: 1rem 1rem;
+	padding: 1rem;
 }
 .Post-Covid-Content-Container h3 {
 	text-align: left;
@@ -37,27 +34,3 @@
 	font-size: 1.5rem;
 }
 
-/* Yoga */
-#Yoga-Container {
-	height: 100vh;
-}
-.yoga-content-container h2 {
-	color: white;
-	text-align: left;
-	font-family: var(--text-bold);
-}
-.yoga-content-container {
-	padding: 1.5rem 1.5rem;
-}
-/*die*/
-#Diet-Container {
-	height: 100vh;
-}
-.diet-content-container {
-	padding: 1.5rem 1.5rem;
-}
-.diet-content-container h2 {
-	color: white;
-	text-align: left;
-	font-family: var(--text-bold);
-}

@@ -35,18 +35,9 @@ const States = () => {
 				</div>
 
 				<div className="states-content-container">
-					<h2
-						style={{
-							textAlign: "left",
-							paddingLeft: "1rem",
-							marginBottom: "0.2rem",
-							color: "white",
-							fontSize: "1.2rem",
-							fontFamily: "var(--text-medium)",
-						}}
-					>
+					<h3 className="states-content-container-heading">
 						Select State
-					</h2>
+					</h3>
 					<StatesGrid gridState={gridState} keywords={keywords} />
 				</div>
 			</div>

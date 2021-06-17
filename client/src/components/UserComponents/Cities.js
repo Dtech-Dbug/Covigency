@@ -1,14 +1,12 @@
 import React, { useEffect } from "react";
-import StatesGrid from "../UserComponents/statesGrid";
 import StickyFooter from "../reusableComponents/stickyFooter";
 import CityLists from "./cityLists";
-import HomeHeaderWithCSS from "../reusableComponents/HomeHeaderWithCSS";
 import HomeHeaderBootstrap from "../reusableComponents/HomeHeaderBootstrap";
 
 const Cities = ({ match }) => {
 	useEffect(() => {
 		console.log("Match Slug ", match.params.slug);
-	}, []);
+	}, [match]);
 	return (
 		<div className="Main-Container">
 			<div className="Main-Container-Content">
@@ -35,16 +33,7 @@ const Cities = ({ match }) => {
 				<h3 style={{ color: "white" }}>Barely a PROTOTYPE</h3>
 
 				<div className="states-content-container">
-					<h2
-						style={{
-							textAlign: "left",
-							paddingLeft: "1rem",
-							marginBottom: "0.2rem",
-							color: "white",
-							fontSize: "1.2rem",
-							fontFamily: "var(--text-medium)",
-						}}
-					>
+					<h2 className="states-content-container-heading">
 						Select City
 					</h2>
 					<CityLists />

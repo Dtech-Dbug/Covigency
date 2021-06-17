@@ -136,16 +136,11 @@ button {
 /* Main Container  styles*/
 
 .Main-Container {
-	position: relative;
-	margin: 0 0;
-	height: 100vh;
-	background: var(--background);
-	overflow: scroll;
+	height: 100%;
+	min-height: 100vh;
 }
 .Main-Container-Content {
-	margin: 0 1.2rem;
-	margin-top: -1rem;
-	margin-left: 1.4rem;
+	padding: 1rem;
 }
 
 /* Header Text and search bar */
@@ -157,17 +152,19 @@ button {
 .headerText h1 {
 	color: white;
 	font-family: var(--text-bold);
+	margin:2rem 0 3rem 0;
 }
 .state-search-input {
-	width: 92%;
-	height: 2.5rem;
+	width: 90%;
+	height: 3rem;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 1rem 1rem;
+	padding: 1.5rem 1rem;
 	margin-left: -0.5rem;
 	background: #151515;
-	border-radius: 1rem 1rem 1rem 1rem;
+	border-radius: 5rem;
+	
 }
 .state-search-input > input {
 	border: none;
@@ -190,6 +187,13 @@ button {
 	margin-bottom: 8rem;
 	margin-top: 1rem;
 	padding-bottom: 1rem;
+}
+.states-content-container-heading{
+	text-align: left;
+	padding-left: 1rem;
+	margin-bottom: 1rem;
+	color:white;
+	font-family: var(--text-medium);
 }
 
 /* states Grid componenet  */
@@ -294,4 +298,14 @@ button {
 .header-and-logo .logo .stateAvatar .state-avatar-name {
 	color: white;
 	font-family: var(--text-bold);
+}
+
+#content-container{
+	padding: 1.5rem;
+}
+
+#content-container-heading{
+	color: white;
+	font-family: var(--text-bold);
+	text-align: left;
 }
