@@ -117,6 +117,7 @@ button {
   justify-content: space-around;
   align-items: center;
   background: #151515;
+  opacity: 0.95;
 }
 .sticky-footer ul {
   width: 80%;
