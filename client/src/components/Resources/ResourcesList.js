@@ -32,23 +32,42 @@ const resourceItems = [
 
 const ResourcesLIst = () => {
 	return (
-		<div className="Container">
-			<div className="fluid-container ml-4 list-container">
-				{resourceItems.map(({ id, src, title }) => {
-					return (
-						<div className="list">
-							<div key={id} className="emoji-and-title">
-								<img src={src} alt="..." />
+		<div className="resources-grid-container">
+			<div className="yoga">
+				<img src={Bed} alt="oops" />
 
-								<h2 style={{ color: "white" }}>{title}</h2>
-							</div>
+				<div className="information">
+					<h3>Hospital Beds</h3>
+					<p>Find info about Availability of Hospital Beds.</p>
+				</div>
+			</div>
 
-							<div className="side-arrow">
-								<img src={ArrowIcon} alt=">" />
-							</div>
-						</div>
-					);
-				})}
+			<div className="food">
+				<div className="image">
+					<img src={Blood} alt="oops" />
+				</div>
+				<div className="information">
+					<h3>Blood</h3>
+					<p>Find info related to Blood/Plasma Availability.</p>
+				</div>
+			</div>
+			<div className="food">
+				<div className="image">
+					<img src={Blood} alt="oops" />
+				</div>
+				<div className="information">
+					<h3>Blood</h3>
+					<p>Find info related to Blood/Plasma Availability.</p>
+				</div>
+			</div>
+			<div className="food">
+				<div className="image">
+					<img src={Blood} alt="oops" />
+				</div>
+				<div className="information">
+					<h3>Blood</h3>
+					<p>Find info related to Blood/Plasma Availability.</p>
+				</div>
 			</div>
 		</div>
 	);
