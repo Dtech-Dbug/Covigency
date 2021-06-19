@@ -11,6 +11,9 @@
 	--text-medium: "SfProDisplayMedium";
 }
 /* Resources Grid*/
+.Container-wrapper {
+	padding: 1rem;
+}
 .resources-grid-container {
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -40,4 +43,9 @@
 .information > p {
 	font-size: 0.9rem;
 	font-family: var(--text-medium);
+}
+
+/*main page resources*/
+#resources-content-container {
+	padding-bottom: 4rem;
 }

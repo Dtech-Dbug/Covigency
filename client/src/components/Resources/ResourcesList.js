@@ -58,19 +58,21 @@ const resourceItems = [
 
 const ResourcesLIst = () => {
 	return (
-		<div className="resources-grid-container">
-			{resourceItems.map(({ id, src, title, description }) => {
-				return (
-					<div className="child-div">
-						<img src={src} alt="oops" />
+		<div className="Container-wrapper">
+			<div className="resources-grid-container">
+				{resourceItems.map(({ id, src, title, description }) => {
+					return (
+						<div className="child-div">
+							<img src={src} alt="oops" />
 
-						<div className="information">
-							<h3>{title}</h3>
-							<p>{description}</p>
+							<div className="information">
+								<h3>{title}</h3>
+								<p>{description}</p>
+							</div>
 						</div>
-					</div>
-				);
-			})}
+					);
+				})}
+			</div>
 		</div>
 	);
 };
