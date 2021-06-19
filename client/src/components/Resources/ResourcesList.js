@@ -11,6 +11,8 @@ import Microscope from "../../icons/🔬.png";
 import Oxygen from "../../icons/😷.png";
 import Injection from "../../icons/💉.png";
 import Bed from "../../icons/bed.png";
+import Ambulance from "../../icons/Ambulance.png";
+import Epidemic from "../../icons/Epidemic.png";
 
 //order
 // "💉": "Vaccine",
@@ -37,7 +39,7 @@ const resourceItems = [
 	},
 	{
 		id: 3,
-		src: "",
+		src: Ambulance,
 		title: "Ambulance",
 		description:
 			"Find information about availability of nearest  ambulance services",
@@ -50,7 +52,7 @@ const resourceItems = [
 	},
 	{
 		id: 5,
-		src: "",
+		src: Epidemic,
 		title: "Epidemic Crisis",
 		description: "Sponsor a child",
 	},
