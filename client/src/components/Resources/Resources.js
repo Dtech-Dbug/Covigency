@@ -8,6 +8,7 @@ const Resources = () => {
 		<div id="Resources-Container-Parent">
 			<div id="resources-content-container">
 				<HomeHeaderBootstrap />
+				<h3>Essentails</h3>
 				<ResourcesLIst />
 			</div>
 			<StickyFooter />
