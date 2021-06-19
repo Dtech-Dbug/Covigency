@@ -22,18 +22,44 @@ import Bed from "../../icons/bed.png";
 // "🩸": "Plasma / Blood Bank",
 
 const resourceItems = [
-	{ id: 1, src: Injection, title: "Vaccine" },
-	{ id: 2, src: Microscope, title: "COVID Testing" },
-	{ id: 3, src: Oxygen, title: "Oxygen" },
-	{ id: 4, src: Bed, title: "Hospital Beds" },
-	{ id: 5, src: Meds, title: "Pharmacies" },
-	{ id: 6, src: Blood, title: "Plasma / Blood " },
+	{
+		id: 1,
+		src: Bed,
+		title: "Hospital Beds",
+		description: "Find information about availability of Hospital Beds.",
+	},
+	{
+		id: 2,
+		src: Meds,
+		title: "Pharmacies",
+		description:
+			"Find information about nearest Pharmacies & availabilty of meds(Except Ramdesivir , Tocillzumab).",
+	},
+	{
+		id: 3,
+		src: "",
+		title: "Ambulance",
+		description:
+			"Find information about availability of nearest  ambulance services",
+	},
+	{
+		id: 4,
+		src: Blood,
+		title: "Plasma / Blood",
+		description: "Find information about availability of Blood/Plasma.",
+	},
+	{
+		id: 5,
+		src: "",
+		title: "Epidemic Crisis",
+		description: "Sponsor a child",
+	},
 ];
 
 const ResourcesLIst = () => {
 	return (
 		<div className="resources-grid-container">
-			<div className="yoga">
+			<div className="child-div">
 				<img src={Bed} alt="oops" />
 
 				<div className="information">
@@ -42,7 +68,7 @@ const ResourcesLIst = () => {
 				</div>
 			</div>
 
-			<div className="food">
+			<div className="child-div">
 				<div className="image">
 					<img src={Blood} alt="oops" />
 				</div>
@@ -51,7 +77,7 @@ const ResourcesLIst = () => {
 					<p>Find info related to Blood/Plasma Availability.</p>
 				</div>
 			</div>
-			<div className="food">
+			<div className="child-div">
 				<div className="image">
 					<img src={Blood} alt="oops" />
 				</div>
@@ -60,7 +86,16 @@ const ResourcesLIst = () => {
 					<p>Find info related to Blood/Plasma Availability.</p>
 				</div>
 			</div>
-			<div className="food">
+			<div className="child-div">
+				<div className="image">
+					<img src={Blood} alt="oops" />
+				</div>
+				<div className="information">
+					<h3>Blood</h3>
+					<p>Find info related to Blood/Plasma Availability.</p>
+				</div>
+			</div>
+			<div className="child-div">
 				<div className="image">
 					<img src={Blood} alt="oops" />
 				</div>
