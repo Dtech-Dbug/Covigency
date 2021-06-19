@@ -12,7 +12,10 @@
 }
 /* Resources Grid*/
 .Container-wrapper {
-	padding: 1rem;
+	padding: 0 1rem 1rem;
+}
+.Container-wrapper h3 {
+	color: white;
 }
 .resources-grid-container {
 	display: grid;
@@ -48,4 +51,8 @@
 /*main page resources*/
 #resources-content-container {
 	padding-bottom: 4rem;
+}
+#resources-content-container {
+	color: white;
+	text-align: left;
 }
