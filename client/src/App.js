@@ -3,7 +3,7 @@ import LandingPage from "./components/Landing";
 import States from "./components/UserComponents/states";
 import Cities from "./components/UserComponents/Cities";
 import { path, Route } from "react-router-dom";
-import Resources from "./components/UserComponents/Resources";
+import Resources from "./components/Resources/Resources";
 import { VaccinePage } from "./components/UserComponents/Vaccine/VaccinePage";
 import SelectCategories from "./components/UserComponents/Categories/SelectCategories";
 import PostCovid from "./components/UserComponents/PostCovid/PostCovid";
