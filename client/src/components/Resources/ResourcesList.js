@@ -1,7 +1,7 @@
 import React from "react";
 
 //importing style exclusive for this component
-import "../stylesheets/resourceList.css";
+import "../Resources/resourceList.css";
 
 //import the icons
 import ArrowIcon from "../../icons/Arrow icon.svg";
