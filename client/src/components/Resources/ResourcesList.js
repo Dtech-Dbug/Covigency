@@ -61,6 +61,7 @@ const resourceItems = [
 const ResourcesLIst = () => {
 	return (
 		<div className="Container-wrapper">
+			<h3>Essentials</h3>
 			<div className="resources-grid-container">
 				{resourceItems.map(({ id, src, title, description }) => {
 					return (
