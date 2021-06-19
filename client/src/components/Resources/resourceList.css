@@ -22,8 +22,13 @@
 	margin: 0.2rem 0.2rem;
 	text-align: left;
 	background-color: #151515;
-	padding-inline: 0.4rem;
+	padding: 0.6rem 0.4rem;
 }
+.child-div img {
+	height: 3.5rem;
+	width: 3.5rem;
+}
+
 .information {
 	color: white;
 }
@@ -33,6 +38,6 @@
 	color: white;
 }
 .information > p {
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	font-family: var(--text-medium);
 }
