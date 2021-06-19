@@ -1,18 +1,16 @@
 import React from "react";
 import HomeHeaderBootstrap from "../reusableComponents/HomeHeaderBootstrap";
-
 import ResourcesLIst from "./ResourcesList";
+import StickyFooter from "../reusableComponents/stickyFooter";
 
 const Resources = () => {
 	return (
-		<div className="fluid-container">
-			<div className="row">
-				<div className="col-md-12 ml-1 pr-3">
-					<HomeHeaderBootstrap />
-				</div>
+		<div id="Resources-Container-Parent">
+			<div id="resources-content-container">
+				<HomeHeaderBootstrap />
+				<ResourcesLIst />
 			</div>
-
-			<ResourcesLIst />
+			<StickyFooter />
 		</div>
 	);
 };
