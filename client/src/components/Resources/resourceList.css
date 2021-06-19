@@ -1,3 +1,15 @@
+@font-face {
+	font-family: SfProDisplayBold;
+	src: url("../../fonts/FontsFree-Net-SFProDisplay-Bold.ttf");
+}
+@font-face {
+	font-family: SfProDisplayMedium;
+	src: url("../../fonts/FontsFree-Net-SFProDisplay-Medium\ \(2\).ttf");
+}
+:root {
+	--text-bold: "SfProDisplayBold";
+	--text-medium: "SfProDisplayMedium";
+}
 /* Resources Grid*/
 .resources-grid-container {
 	background-color: blueviolet;
@@ -14,6 +26,10 @@
 	background-color: cyan;
 	box-sizing: border-box;
 }
+.information h3 {
+	font-family: var(--text-bold);
+}
 .information > p {
 	font-size: 0.8rem;
+	font-family: var(--text-bold);
 }
