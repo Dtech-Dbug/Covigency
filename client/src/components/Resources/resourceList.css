@@ -12,24 +12,27 @@
 }
 /* Resources Grid*/
 .resources-grid-container {
-	background-color: blueviolet;
 	display: grid;
 	grid-template-columns: 50% 50%;
 }
 .resources-grid-container > div {
-	border: 3px solid white;
 	height: 12rem;
 	width: auto;
 	border-radius: 0.75rem;
 	margin: 0.2rem 0.2rem;
 	text-align: left;
-	background-color: cyan;
-	box-sizing: border-box;
+	background-color: #151515;
+	padding-inline: 0.4rem;
+}
+.information {
+	color: white;
 }
 .information h3 {
 	font-family: var(--text-bold);
+	font-size: 1.5rem;
+	color: white;
 }
 .information > p {
 	font-size: 0.8rem;
-	font-family: var(--text-bold);
+	font-family: var(--text-medium);
 }
