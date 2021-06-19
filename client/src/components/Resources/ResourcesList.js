@@ -33,7 +33,7 @@ const resourceItems = [
 		src: Meds,
 		title: "Pharmacies",
 		description:
-			"Find information about nearest Pharmacies & availabilty of meds(Except Ramdesivir , Tocillzumab).",
+			"Find nearest pharm. for drugs other than Ramdesivir , Tocillzumab.",
 	},
 	{
 		id: 3,
@@ -59,51 +59,18 @@ const resourceItems = [
 const ResourcesLIst = () => {
 	return (
 		<div className="resources-grid-container">
-			<div className="child-div">
-				<img src={Bed} alt="oops" />
+			{resourceItems.map(({ id, src, title, description }) => {
+				return (
+					<div className="child-div">
+						<img src={src} alt="oops" />
 
-				<div className="information">
-					<h3>Hospital Beds</h3>
-					<p>Find info about Availability of Hospital Beds.</p>
-				</div>
-			</div>
-
-			<div className="child-div">
-				<div className="image">
-					<img src={Blood} alt="oops" />
-				</div>
-				<div className="information">
-					<h3>Blood</h3>
-					<p>Find info related to Blood/Plasma Availability.</p>
-				</div>
-			</div>
-			<div className="child-div">
-				<div className="image">
-					<img src={Blood} alt="oops" />
-				</div>
-				<div className="information">
-					<h3>Blood</h3>
-					<p>Find info related to Blood/Plasma Availability.</p>
-				</div>
-			</div>
-			<div className="child-div">
-				<div className="image">
-					<img src={Blood} alt="oops" />
-				</div>
-				<div className="information">
-					<h3>Blood</h3>
-					<p>Find info related to Blood/Plasma Availability.</p>
-				</div>
-			</div>
-			<div className="child-div">
-				<div className="image">
-					<img src={Blood} alt="oops" />
-				</div>
-				<div className="information">
-					<h3>Blood</h3>
-					<p>Find info related to Blood/Plasma Availability.</p>
-				</div>
-			</div>
+						<div className="information">
+							<h3>{title}</h3>
+							<p>{description}</p>
+						</div>
+					</div>
+				);
+			})}
 		</div>
 	);
 };
