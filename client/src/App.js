@@ -4,6 +4,7 @@ import States from "./components/UserComponents/states";
 import Cities from "./components/UserComponents/Cities";
 import { path, Route } from "react-router-dom";
 import Resources from "./components/Resources/Resources";
+import ResourcesLIst from "./components/Resources/ResourcesList";
 import { VaccinePage } from "./components/UserComponents/Vaccine/VaccinePage";
 import SelectCategories from "./components/UserComponents/Categories/SelectCategories";
 import PostCovid from "./components/UserComponents/PostCovid/PostCovid";
@@ -17,7 +18,7 @@ function App() {
 			<Route path="/" exact component={LandingPage} />
 			<Route path="/states" exact component={States} />
 			<Route path="/cities/:slug" exact component={Cities} />
-			<Route path="/resources" exact component={Resources} />
+			<Route path="/resources" exact component={ResourcesLIst} />
 			<Route path="/categories" exact component={SelectCategories} />
 			<Route path="/vaccine" exact component={VaccinePage} />
 			<Route path="/post-covid" exact component={PostCovid} />
