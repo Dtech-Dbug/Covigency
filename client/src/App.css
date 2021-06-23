@@ -172,17 +172,20 @@ figcaption span {
 	text-align: center;
 }
 .card__image {
-	height: 3.5rem;
-	width: 3.5rem;
+	height: 7.5rem;
+	width: 7.5rem;
 	margin-bottom: 0.5rem;
 }
 
 .card__description {
 	margin-bottom: none;
+	font-size: 1.375rem;
+	font-family: var(--text-semi-bold);
 }
 
 .card__title {
 	color: #fff;
+	font-size: 2.25rem;
 }
 
 .card__button {
