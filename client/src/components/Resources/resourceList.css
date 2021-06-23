@@ -1,31 +1,41 @@
 @font-face {
-  font-family: SfProDisplayBold;
-  src: url("../../fonts/FontsFree-Net-SFProDisplay-Bold.ttf");
+	font-family: SfProDisplayBold;
+	src: url("../../fonts/FontsFree-Net-SFProDisplay-Bold.ttf");
 }
 @font-face {
-  font-family: SfProDisplayMedium;
-  src: url("../../fonts/FontsFree-Net-SFProDisplay-Medium\ \(2\).ttf");
+	font-family: SfProDisplayMedium;
+	src: url("../../fonts/FontsFree-Net-SFProDisplay-Medium\ \(2\).ttf");
 }
 :root {
-  --text-bold: "SfProDisplayBold";
-  --text-medium: "SfProDisplayMedium";
+	--text-bold: "SfProDisplayBold";
+	--text-medium: "SfProDisplayMedium";
 }
 
 /* Resources Grid*/
 .Container-wrapper {
-  padding: 1rem;
+	padding: 1rem;
 }
-
-
 
 /*main page resources*/
 #resources-content-container {
-  padding-bottom: 4rem;
-  min-height: 100vh;
+	padding-bottom: 4rem;
+	min-height: 100vh;
 }
 .resource-block {
-  text-align: left;
-  color: #fff;
-  margin-bottom: 5rem;
-  gap: 1rem;
+	text-align: left;
+	color: #fff;
+	margin-bottom: 5rem;
+	gap: 1rem;
+}
+
+/* styling the epidemic support card*/
+#card-5-title {
+	background: -webkit-linear-gradient(#e477ff, #dd625a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#card-5-desc {
+	background: -webkit-linear-gradient(#cc5d5d, #a5ff7b);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
