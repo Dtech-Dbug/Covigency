@@ -1,58 +1,31 @@
 @font-face {
-	font-family: SfProDisplayBold;
-	src: url("../../fonts/FontsFree-Net-SFProDisplay-Bold.ttf");
+  font-family: SfProDisplayBold;
+  src: url("../../fonts/FontsFree-Net-SFProDisplay-Bold.ttf");
 }
 @font-face {
-	font-family: SfProDisplayMedium;
-	src: url("../../fonts/FontsFree-Net-SFProDisplay-Medium\ \(2\).ttf");
+  font-family: SfProDisplayMedium;
+  src: url("../../fonts/FontsFree-Net-SFProDisplay-Medium\ \(2\).ttf");
 }
 :root {
-	--text-bold: "SfProDisplayBold";
-	--text-medium: "SfProDisplayMedium";
-}
-/* Resources Grid*/
-.Container-wrapper {
-	padding: 0 1rem 1rem;
-}
-.Container-wrapper h3 {
-	color: white;
-}
-.resources-grid-container {
-	display: grid;
-	grid-template-columns: 50% 50%;
-}
-.resources-grid-container > div {
-	height: 12rem;
-	width: auto;
-	border-radius: 0.75rem;
-	margin: 0.2rem 0.2rem;
-	text-align: left;
-	background-color: #151515;
-	padding: 0.6rem 0.4rem;
-}
-.child-div img {
-	height: 3.5rem;
-	width: 3.5rem;
+  --text-bold: "SfProDisplayBold";
+  --text-medium: "SfProDisplayMedium";
 }
 
-.information {
-	color: white;
+/* Resources Grid*/
+.Container-wrapper {
+  padding: 1rem;
 }
-.information h3 {
-	font-family: var(--text-bold);
-	font-size: 1.5rem;
-	color: white;
-}
-.information > p {
-	font-size: 0.9rem;
-	font-family: var(--text-medium);
-}
+
+
 
 /*main page resources*/
 #resources-content-container {
-	padding-bottom: 4rem;
+  padding-bottom: 4rem;
+  min-height: 100vh;
 }
-#resources-content-container {
-	color: white;
-	text-align: left;
+.resource-block {
+  text-align: left;
+  color: #fff;
+  margin-bottom: 5rem;
+  gap: 1rem;
 }

@@ -5,8 +5,8 @@ import StickyFooter from "../reusableComponents/stickyFooter";
 
 const Resources = () => {
 	return (
-		<div id="Resources-Container-Parent">
-			<div id="resources-content-container">
+		<div className="main-container">
+			<div  className="container">
 				<HomeHeaderBootstrap />
 
 				<ResourcesLIst />

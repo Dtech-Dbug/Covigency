@@ -22,11 +22,17 @@
 .vaccine-info-container a {
 	cursor: pointer;
 }
-.register-btn {
+.register-action{
+	padding: 1rem 0;
 	text-align: center;
 }
-.vaccine-info-container img {
-	height: 3rem;
+.register-btn {
+	text-align: center;
+  background-color: #4ca0dc;
+  color: #fff;
+  font-family: var(--text-medium);
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
 }
 
 /* Vaccine Main PAage compoenet*/

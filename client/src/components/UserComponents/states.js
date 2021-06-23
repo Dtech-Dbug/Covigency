@@ -19,8 +19,8 @@ const States = () => {
 	}
 
 	return (
-		<div className="Main-Container">
-			<div className="Main-Container-Content">
+		<div className="main-container">
+			<div className="container">
 				<div className="headerText">
 					<h1>HOME</h1>
 
@@ -35,9 +35,9 @@ const States = () => {
 				</div>
 
 				<div className="states-content-container">
-					<h3 className="states-content-container-heading">
+					<h2 className="text-light">
 						Select State
-					</h3>
+					</h2>
 					<StatesGrid gridState={gridState} keywords={keywords} />
 				</div>
 			</div>

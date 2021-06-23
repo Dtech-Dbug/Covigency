@@ -8,8 +8,8 @@ const Cities = ({ match }) => {
 		console.log("Match Slug ", match.params.slug);
 	}, [match]);
 	return (
-		<div className="Main-Container">
-			<div className="Main-Container-Content">
+		<div className="main-container">
+			<div className="container">
 				{/* <div className="headerText">
 					<div className="header-and-logo">
 						<div className="header">
@@ -30,10 +30,10 @@ const Cities = ({ match }) => {
 				</div> */}
 				<HomeHeaderBootstrap stateCode={match.params.slug} />
 
-				<h3 style={{ color: "white" }}>Barely a PROTOTYPE</h3>
+			
 
 				<div className="states-content-container">
-					<h2 className="states-content-container-heading">
+					<h2 className="text-light" >
 						Select City
 					</h2>
 					<CityLists />

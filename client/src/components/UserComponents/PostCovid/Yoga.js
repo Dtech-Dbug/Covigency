@@ -14,9 +14,11 @@ const Yoga = () => {
 	const information =
 		"Yoga  is a discipline on an extremely subtle science , which focuses on bringing harmony between mind and body.";
 	return (
-		<div id="Yoga-Container" className="Main-Container">
-			<div id="content-container">
-				<h2 id="content-container-heading"> {"<"} Home </h2>
+		<div  className="main-container">
+			<div className="container " >
+				<div className="headerText">
+					<h1 className="text-light">HOME </h1>
+				</div>
 				<PromotionCard
 					header="Leher"
 					extension=".org"
