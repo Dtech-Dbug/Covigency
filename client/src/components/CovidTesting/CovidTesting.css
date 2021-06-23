@@ -1,0 +1,25 @@
+.covid-testing.card {
+  height: 18rem;
+  overflow: hidden;
+}
+
+
+.availabilityStatus {
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.availabilityStatus-full {
+  background-image: linear-gradient(150deg, #ee4c1b 0%, #6e1600 74%);
+}
+
+.availabilityStatus-free {
+  background-image: linear-gradient(150deg, #00ff80 0%, #00502c 74%);
+}
+
+.availabilityStatus-moderate {
+  background-image: linear-gradient(150deg, #e9f380 0%, #ffc800 74%);
+}

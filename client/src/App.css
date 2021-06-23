@@ -110,13 +110,12 @@ small,
   height: 100%;
   min-height: 100vh;
   width: 100%;
-  background: #000; 
-
+  background: #000;
 }
 
-.container{
-  padding:1rem;
-    background: #000; 
+.container {
+  padding: 1rem;
+  background: #000;
 }
 
 /* Landing Page style */
@@ -155,7 +154,6 @@ figcaption span {
 
 /* Card Component */
 .card {
-  min-height: 18rem;
   height: auto;
   width: auto;
   border-radius: 0.75rem;
@@ -178,22 +176,31 @@ figcaption span {
   margin-bottom: 0.5rem;
 }
 
-.card__description {
-  margin-bottom: none;
+.card__title {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: #fff;
+  display: -webkit-box;
+  overflow: hidden;
+  word-break: break-all;
 }
 
-.card__title {
-  color: #fff;
+.card__description {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  margin-bottom: none;
+  overflow: hidden;
+  word-break: break-all;
 }
 
 .card__button {
   background-color: #4ca0dc;
   color: #fff;
   font-family: var(--text-medium);
-  font-size: 1.2rem;
 }
 .button-wrap {
-  border-radius: 5rem ;
+  border-radius: 5rem;
   width: 227px;
   height: 50px;
   padding: 0.05rem;
@@ -202,7 +209,8 @@ figcaption span {
   margin-bottom: 1rem;
 }
 
-button ,.btn{
+button,
+.btn {
   background: var(--background);
   width: 227px;
   height: 50px;
@@ -254,7 +262,6 @@ button ,.btn{
 
 /* Main Container  styles*/
 
-
 /* Header Text and search bar */
 
 .headerText {
@@ -263,13 +270,12 @@ button ,.btn{
   color: white;
 }
 .headerText h1,
-.headerText .headerTitle{
+.headerText .headerTitle {
   color: white;
   font-family: var(--text-bold);
   margin: 0 0 2rem 0;
 }
 .state-search-input {
-
   height: 3rem;
   display: flex;
   justify-content: flex-start;
@@ -361,8 +367,7 @@ button ,.btn{
 /* Ciyu List Prototye Sty;e*/
 
 .City-Container {
-  border-radius: 0.75rem ;
-
+  border-radius: 0.75rem;
 }
 .child-flex-item {
   padding: 1rem 1rem;
@@ -389,7 +394,6 @@ button ,.btn{
   justify-content: space-between;
 }
 .header-and-logo .logo {
-
   display: flex;
   justify-content: flex-end;
   position: relative;
