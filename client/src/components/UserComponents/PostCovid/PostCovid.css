@@ -1,36 +1,11 @@
-* {
-	box-sizing: border-box;
-}
-:root {
-	--text-bold: "SfProDisplayBold";
-}
-
-.Post-Covid-Content-Container {
-	padding: 1rem;
-}
-.Post-Covid-Content-Container h3 {
-	text-align: left;
-	color: white;
-}
-.Post-Covid-Flex-Container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 95%;
+.post-covid-container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.Post-Covid-Flex-Container > div {
-	background-color: #151515;
-	width: 49.5%;
-	padding: 1rem 0;
-	padding-top: 2rem;
-	border-radius: 0.75rem 0.75rem;
+.post-covid-container .card__image {
+  height: 6rem;
+  width: auto;
 }
-.Post-Covid-Flex-Container img {
-	height: 6rem;
-}
-.Post-Covid-Flex-Container p {
-	color: white;
-	font-size: 1.5rem;
-}
-

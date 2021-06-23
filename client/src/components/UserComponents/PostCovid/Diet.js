@@ -13,9 +13,11 @@ const Diet = () => {
   const information =
     "Good nutrition is vital for maintaining good health status , particularly at this point of time when your immune system has taken a setback and is in a weaker state after being affected by the deadly virus.";
   return (
-    <div id="Diet-Container" className="Main-Container">
-      <div id="content-container">
-        <h2 id="content-container-heading">{"< "}Home</h2>
+    <div id="Diet-Container" className="main-container">
+      <div className="container ">
+        <div className="headerText">
+          <h1 className="headerTitle">HOME</h1>
+        </div>
         <PromotionCard
           header="Save India Farmers"
           extension=".org"

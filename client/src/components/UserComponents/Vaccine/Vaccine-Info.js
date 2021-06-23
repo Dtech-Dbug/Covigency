@@ -1,6 +1,5 @@
 import React from "react";
 import "../Vaccine/vaccine.css";
-import CowinButton from "../../../icons/CowinButton.png";
 
 const VaccineInfo = () => {
 	return (
@@ -34,15 +33,18 @@ const VaccineInfo = () => {
 					access the CoWIN user manual for more detials below.
 				</p>
 
-				<div className="register-btn">
-					<a
-						href="https://www.cowin.gov.in/home"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<img src={CowinButton} alt="" />
-					</a>
-				</div>
+
+					<div className="register-action">
+						<a
+						className="btn register-btn"
+							href="https://www.cowin.gov.in/home"
+							target="_blank"
+							rel="noreferrer"
+						>
+							Register on COWIN
+						</a>
+					</div>
+				
 			</div>
 		</div>
 	);

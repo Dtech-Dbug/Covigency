@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Fragment} from "react";
 
 //importing style exclusive for this component
 import "../Resources/resourceList.css";
@@ -24,60 +24,60 @@ import Epidemic from "../../icons/Epidemic.png";
 // "🩸": "Plasma / Blood Bank",
 
 const resourceItems = [
-	{
-		id: 1,
-		src: Bed,
-		title: "Hospital Beds",
-		description: "Find information about availability of Hospital Beds.",
-	},
-	{
-		id: 2,
-		src: Meds,
-		title: "Pharmacies",
-		description:
-			"Find nearest pharm. for drugs other than Ramdesivir , Tocillzumab.",
-	},
-	{
-		id: 3,
-		src: Ambulance,
-		title: "Ambulance",
-		description:
-			"Find information about availability of nearest  ambulance services",
-	},
-	{
-		id: 4,
-		src: Blood,
-		title: "Plasma / Blood",
-		description: "Find information about availability of Blood/Plasma.",
-	},
-	{
-		id: 5,
-		src: Epidemic,
-		title: "Epidemic Crisis",
-		description: "Sponsor a child",
-	},
+  {
+    id: 1,
+    src: Bed,
+    title: "Hospital Beds",
+    description: "Find information about availability of Hospital Beds.",
+  },
+  {
+    id: 2,
+    src: Meds,
+    title: "Pharmacies",
+    description:
+      "Find nearest pharm. for drugs other than Ramdesivir , Tocillzumab.",
+  },
+  {
+    id: 3,
+    src: Ambulance,
+    title: "Ambulance",
+    description:
+      "Find information about availability of nearest  ambulance services",
+  },
+  {
+    id: 4,
+    src: Blood,
+    title: "Plasma / Blood",
+    description: "Find information about availability of Blood/Plasma.",
+  },
+  {
+    id: 5,
+    src: Epidemic,
+    title: "Epidemic Crisis",
+    description: "Sponsor a child",
+  },
 ];
 
 const ResourcesLIst = () => {
-	return (
-		<div className="Container-wrapper">
-			<h3>Essentials</h3>
-			<div className="resources-grid-container">
-				{resourceItems.map(({ id, src, title, description }) => {
-					return (
-						<div className="child-div">
-							<img src={src} alt="oops" />
+  return (
+    <Fragment>
+      <h3 className="text-light">Essentials</h3>
+      <div className="grid grid-1x2 resource-block">
+        {resourceItems.map(({ id, src, title, description }) => {
+          return (
+            <div key={id} className="card card--dark">
+              <img className="card__image" src={src} alt="oops" />
 
-							<div className="information">
-								<h3>{title}</h3>
-								<p>{description}</p>
-							</div>
-						</div>
-					);
-				})}
-			</div>
-		</div>
-	);
+              <div className="card__header">
+                <h3 className="card__title">{title}</h3>
+                <p className="card__description">{description}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </Fragment>
+  );
 };
 
 export default ResourcesLIst;

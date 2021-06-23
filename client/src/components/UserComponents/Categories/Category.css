@@ -16,30 +16,20 @@
 
 /* category cards padding*/
 .cat-text {
-	padding: 1rem 1rem;
+	padding: 1rem;
 }
 
-.category-block p {
-	font-size: 0.8rem;
-	border: none;
-}
+
 .category-block h4 {
 	font-size: 1.5rem;
 }
-.category-block h2 {
-	text-align: left;
-	color: white;
-}
 .category-container {
 	display: grid;
-	grid-template-columns: 48% 48%;
-	grid-gap: 4vw;
+	grid-template-columns: repeat(2,1fr);
+	gap:1rem;
 	height: 100%;
 }
-.category-container h4,
-p {
-	font-family: var(--text-bold);
-}
+
 .category-container .Icons {
 	height: 5rem;
 	width: 5rem;
@@ -109,6 +99,7 @@ p {
 .cat-5 h4 {
 	line-height: 1.8rem;
 	background: linear-gradient(136.87deg, #94428c -7.83%, #2a2a2a 122.39%);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -122,16 +113,15 @@ p {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 0 1rem;
+	
 }
 .cat-1 .cat-text .cat-info {
 	width: 70%;
 	text-align: left;
 }
 .cat-1 .cat-text img {
-	width: 25%;
-	height: 50%;
-	margin-top: -2rem;
+	width: 20%;
+	height: auto;
 }
 
 .cat-2 .Icons {

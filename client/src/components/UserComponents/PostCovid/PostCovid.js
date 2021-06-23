@@ -6,42 +6,40 @@ import StickyFooter from "../../reusableComponents/stickyFooter";
 
 import "./PostCovid.css";
 const PostCovid = ({ history }) => {
-	function YogaRoute(e) {
-		e.preventDefault();
-		history.push("/yoga");
-	}
-	function FoodRoute(e) {
-		e.preventDefault();
-		history.push("/diet");
-	}
-	return (
-		<div id="Post-Covid-Container" className="Main-Container">
-			<HomeHeaderBootstrap />
+  function YogaRoute(e) {
+    e.preventDefault();
+    history.push("/yoga");
+  }
+  function FoodRoute(e) {
+    e.preventDefault();
+    history.push("/diet");
+  }
+  return (
+    <div  className="main-container">
 
-			<div className="Post-Covid-Content-Container">
-				<h3>Post Covid</h3>
-				<div className="Post-Covid-Flex-Container">
-					<div className="yoga" onClick={YogaRoute}>
-						<img src={PostCovidIcon} alt="oops" />
+      <div className="container post-covid-container">
+      <HomeHeaderBootstrap />
+        <h3 className="text-light">Post Covid</h3>
+        <div className="grid grid-1x2">
+          <div className="card card--dark " onClick={YogaRoute}>
+            <img className="card__image" src={PostCovidIcon} alt="oops" />
 
-						<div className="information">
-							<p>Yoga</p>
-						</div>
-					</div>
+            <div className="card__header information">
+              <h2 className="card__title">Yoga</h2>
+            </div>
+          </div>
 
-					<div className="food" onClick={FoodRoute}>
-						<div className="image">
-							<img src={Food} alt="oops" />
-						</div>
-						<div className="information">
-							<p>Food</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<StickyFooter />
-		</div>
-	);
+          <div className="card card--dark " onClick={FoodRoute}>
+            <img className="card__image" src={Food} alt="oops" />
+            <div className="card__header information">
+              <h2 className="card__title">Food</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <StickyFooter />
+    </div>
+  );
 };
 
 export default PostCovid;
