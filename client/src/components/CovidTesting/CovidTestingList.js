@@ -18,10 +18,10 @@ const CovidTestingList = ({ HospitalList }) => {
 		}
 	};
 
-	function routeToHospitalInfo(name) {
-		console.log(name); //console.log name to be sure
+	function routeToHospitalInfo(id) {
+		console.log(id); //console.log name to be sure
 
-		history.push(`/hospital/${name}`);
+		history.push(`/hospital/${id}`);
 	}
 	return (
 		<Fragment>
@@ -33,7 +33,7 @@ const CovidTestingList = ({ HospitalList }) => {
 						<div
 							key={id}
 							className="covid-testing card card--dark"
-							onClick={() => routeToHospitalInfo(name)}
+							onClick={() => routeToHospitalInfo(id)}
 						>
 							<span
 								className={`availabilityStatus ${checkAvailability(
