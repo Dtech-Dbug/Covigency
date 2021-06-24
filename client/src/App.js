@@ -25,7 +25,7 @@ function App() {
 			<Route path="/yoga" exact component={Yoga} />
 			<Route path="/diet" exact component={Diet} />
 			<Route path="/covid-testing" exact component={CovidTesting} />
-			<Route path="/hospital/:name" exact component={HospitalInfo} />
+			<Route path="/hospital/:id" exact component={HospitalInfo} />
 		</div>
 	);
 }
