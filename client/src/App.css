@@ -191,7 +191,6 @@ figcaption span {
   display: -webkit-box;
   margin-bottom: none;
   overflow: hidden;
-  word-break: break-all;
 }
 
 .card__button {

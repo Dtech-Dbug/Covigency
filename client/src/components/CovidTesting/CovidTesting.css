@@ -3,8 +3,7 @@
   overflow: hidden;
 }
 
-
-.availabilityStatus {
+.activityStatus {
   width: 3rem;
   height: 3rem;
   display: block;
@@ -12,14 +11,65 @@
   margin-bottom: 1rem;
 }
 
-.availabilityStatus-full {
+.activityStatus-full {
   background-image: linear-gradient(150deg, #ee4c1b 0%, #6e1600 74%);
 }
 
-.availabilityStatus-free {
+.activityStatus-free {
   background-image: linear-gradient(150deg, #00ff80 0%, #00502c 74%);
 }
 
-.availabilityStatus-moderate {
+.activityStatus-moderate {
   background-image: linear-gradient(150deg, #e9f380 0%, #ffc800 74%);
+}
+
+/* Hospital Info */
+.hospital-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-group-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+}
+.info-group-content {
+  font-size: 1.8rem;
+}
+
+.info-action-container {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 1rem;
+  text-align: center;
+}
+
+.info-action {
+  padding: 1rem;
+}
+.info-action-icon {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 0.5rem;
+}
+.info-action-name {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.review-button {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.review-alert {
+  width: 100%;
+  border: 1px solid #4ca0dc;
+  color: #4ca0dc;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.75rem;
 }
