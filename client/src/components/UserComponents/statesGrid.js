@@ -1,40 +1,41 @@
 import React from "react";
-import StateDataArray from "../Data/StateDataArray";
 import { useHistory } from "react-router-dom";
 
 const StatesGrid = ({ gridState, keywords }) => {
-	const history = useHistory();
+  const history = useHistory();
 
-	function check(slug) {
-		console.log(slug);
-		history.push(`/cities/${slug}`);
-	}
-	const search = (keywords) => (gridState) =>
-		gridState.title.toLowerCase().includes(keywords);
-	return (
-		<div className="states-parent-grid-container">
-			{gridState
-				.filter(search(keywords))
-				.map(({ id, code, title, slug, background }) => {
-					return (
-						<div
-							key={id}
-							className={`states-child-grid-container`}
-							id={`child-${id}`}
-						>
-							<div
-								style={{ background: background }}
-								className="child child-1"
-								onClick={() => check(slug)}
-							>
-								{code}
-							</div>
-							<div className="state-name">{title}</div>
-						</div>
-					);
-				})}
-		</div>
-	);
+  function check(slug) {
+    console.log(slug);
+    history.push(`/cities/${slug}`);
+	// Storing stateCode in the local storage for header
+    localStorage.setItem("CurrentState", slug);
+  }
+  const search = (keywords) => (gridState) =>
+    gridState.title.toLowerCase().includes(keywords);
+  return (
+    <div className="states-parent-grid-container">
+      {gridState
+        .filter(search(keywords))
+        .map(({ id, code, title, slug, background }) => {
+          return (
+            <div
+              key={id}
+              className={`states-child-grid-container`}
+              id={`child-${id}`}
+            >
+              <div
+                style={{ background: background }}
+                className="child child-1"
+                onClick={() => check(slug)}
+              >
+                {code}
+              </div>
+              <div className="state-name">{title}</div>
+            </div>
+          );
+        })}
+    </div>
+  );
 };
 
 export default StatesGrid;

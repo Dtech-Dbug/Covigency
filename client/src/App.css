@@ -411,6 +411,7 @@ button,
 .header-and-logo .logo .stateAvatar .state-avatar-name {
   color: white;
   font-family: var(--text-bold);
+  text-transform: uppercase;
 }
 
 .content-container {
