@@ -6,7 +6,8 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 1.5rem 1.5rem;
-  border-radius: 1.33rem 1.33rem 1.33rem 1.33rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .promoted-org h4,

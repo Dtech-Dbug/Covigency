@@ -11,23 +11,27 @@ import Yoga from "./components/UserComponents/PostCovid/Yoga";
 import Diet from "./components/UserComponents/PostCovid/Diet";
 import CovidTesting from "./components/CovidTesting/CovidTesting";
 import HospitalInfo from "./components/CovidTesting/HospitalInfo";
+import HospitalReviews from "./components/CovidTesting/HospitalReviews";
+import CelebConnect from "./components/UserComponents/Support/CelebConnect";
 
 function App() {
-	return (
-		<div className="App">
-			<Route path="/" exact component={LandingPage} />
-			<Route path="/states" exact component={States} />
-			<Route path="/cities/:slug" exact component={Cities} />
-			<Route path="/resources" exact component={Resources} />
-			<Route path="/categories" exact component={SelectCategories} />
-			<Route path="/vaccine" exact component={VaccinePage} />
-			<Route path="/post-covid" exact component={PostCovid} />
-			<Route path="/yoga" exact component={Yoga} />
-			<Route path="/diet" exact component={Diet} />
-			<Route path="/covid-testing" exact component={CovidTesting} />
-			<Route path="/hospital/:id" exact component={HospitalInfo} />
-		</div>
-	);
+  return (
+    <div className="App">
+      <Route path="/" exact component={LandingPage} />
+      <Route path="/states" exact component={States} />
+      <Route path="/cities/:slug" exact component={Cities} />
+      <Route path="/resources" exact component={Resources} />
+      <Route path="/categories" exact component={SelectCategories} />
+      <Route path="/vaccine" exact component={VaccinePage} />
+      <Route path="/post-covid" exact component={PostCovid} />
+      <Route path="/yoga" exact component={Yoga} />
+      <Route path="/diet" exact component={Diet} />
+      <Route path="/covid-testing" exact component={CovidTesting} />
+      <Route path="/hospital/:id" exact component={HospitalInfo} />
+      <Route path="/hospital/:id/reviews" exact component={HospitalReviews} />
+      <Route path="/celeb-connect" exact component={CelebConnect} />
+    </div>
+  );
 }
 
 export default App;

@@ -27,7 +27,6 @@ const CovidTestingList = ({ HospitalList }) => {
               onClick={() => routeToHospitalInfo(id)}
             >
               <ActivityStatus activity={activityStatus} />
-
               <div className="card__header">
                 <h3 className="card__title">{name}</h3>
                 <p className="card__description">{address}</p>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 import HomeHeaderBootstrap from "../reusableComponents/HomeHeaderBootstrap";
 import HospitalList from "../Data/HospitalList";
 
@@ -7,13 +8,16 @@ import CallIcon from "../../icons/call-icon.svg";
 import MessageIcon from "../../icons/message-icon.svg";
 
 const HospitalInfo = ({ match }) => {
+  const history = useHistory();
   const [hospital, setHospital] = useState();
 
   useEffect(() => {
     setHospital(HospitalList[match.params.id]);
-    console.log("hospitalInfo", hospital); //to check if we are getting the data correctly
-    console.log(match);
   }, [hospital, match]);
+
+  const passSlug = (id) => {
+    history.push(`/hospital/${id}/reviews`);
+  };
   return (
     <div className="main-container">
       <div className="container">
@@ -67,9 +71,12 @@ const HospitalInfo = ({ match }) => {
               </button>
             </div>
 
-            <div className="review-alert">
+            <button
+              className="review-alert"
+              onClick={() => passSlug(hospital.id)}
+            >
               <span>Your review helps 10x People</span>
-            </div>
+            </button>
           </>
         )}
       </div>

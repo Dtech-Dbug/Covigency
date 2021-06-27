@@ -43,7 +43,6 @@ html {
 body {
   line-height: 1.75;
   background-color: #000;
-  color: #fff;
 }
 h1,
 h2,
@@ -200,7 +199,7 @@ figcaption span {
 }
 .button-wrap {
   border-radius: 5rem;
-  width: 227px;
+  min-width: 227px;
   height: 50px;
   padding: 0.05rem;
   background: radial-gradient(#56ffc2, #4bc749);
@@ -211,11 +210,12 @@ figcaption span {
 button,
 .btn {
   background: var(--background);
-  width: 227px;
+  min-width: 227px;
   height: 50px;
   border-radius: 5rem;
   font-family: var(--text-bold);
   font-size: 2rem;
+  padding: 0 1rem;
   text-align: center;
 }
 .button-wrap button p {
@@ -223,6 +223,15 @@ button,
   font-size: 2rem;
   text-align: center;
   margin-bottom: 0;
+}
+.button__outline {
+  width: 100%;
+  border: 1px solid #4ca0dc;
+  color: #4ca0dc;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.75rem;
+  margin: 1rem auto;
 }
 .footer-footer {
   font-family: var(--text-bold);
@@ -422,4 +431,88 @@ button,
   color: white;
   font-family: var(--text-bold);
   text-align: left;
+}
+
+/* Slider Dots */
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -5px;
+
+  display: block;
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  text-align: center;
+}
+.slick-dots li {
+  position: relative;
+
+  display: inline-block;
+
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+
+  cursor: pointer;
+}
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+
+  display: block;
+
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+
+  cursor: pointer;
+
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 1rem;
+  line-height: 20px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  content: "•";
+  text-align: center;
+
+  opacity: 0.25;
+  color: #fff;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #fff;
 }

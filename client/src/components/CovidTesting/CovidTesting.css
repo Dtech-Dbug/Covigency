@@ -60,6 +60,7 @@
   margin-bottom: 0;
 }
 
+/* Review */
 .review-button {
   text-align: center;
   margin: 1rem auto;
@@ -72,4 +73,32 @@
   padding: 1rem;
   text-align: center;
   border-radius: 0.75rem;
+  margin: 1rem auto;
+}
+
+.review-slider {
+  min-height: 8rem;
+  margin-bottom: 2rem;
+}
+.review-text {
+  font-size: 1.6rem;
+}
+
+.review-bar-container {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 1rem;
+  text-align: center;
+}
+.review-bar-container .activityStatus {
+  margin: auto;
+}
+.review-bar-item {
+  padding: 1rem;
+}
+.review-bar-value {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 0;
 }

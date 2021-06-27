@@ -7,6 +7,11 @@ const HospitalList = [
     contactNo: 8759856466,
     activityStatus: "free",
     lastUpdated: "28 May 2021 12:52PM",
+    reviews: [
+      "I got my first shot of Covid vaccination done today at Aashlok Hospital. I think there were about a dozen staff and they were ALL very friendly and helpful. A great experience.",
+      "Very Well Maintained.",
+      "I will recommend to family and friends.  Thank you for making me feel like I  was getting the best care.",
+    ],
     timing: "8:00AM to 8:00PM",
   },
   {
